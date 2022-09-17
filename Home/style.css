@@ -47,8 +47,72 @@ a{
 }
 .banner {
     margin-top: 20px;
+    font-family: 'Oswald';
+    display: grid;
+    width: 1005;
+    place-items: center;
+    justify-items: start;
+}
+.banner > *{
+    grid-column: 1/-1;
+    grid-row:1/-1;
 }
 .banner__img{
-    width: 100%;
+    width:100%;
     height: 70vh;
 }
+.banner__content{
+    margin: 4em;
+    /* Media */
+    display: block;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+.banner__content_text{
+    width: 7em;
+    height: fit-content;
+    color: white;
+}
+.banner__content_text > span {
+    -webkit-text-stroke: 0.5px red;
+    color: white; 
+}
+.banner__content_button{
+    margin-top: 2em;
+    color: white;
+    width: fit-content;
+    border:1px solid white;
+    padding-inline: 1em;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brands{
+    margin-top:30px ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    border: 2px solid #C4C4C4;
+    position: relative;
+}
+.brands::after{
+    content: "Choose your Brand";
+    font-size: 20px;
+    /* media */
+    font-family: 'Oswald';
+    width: 10em;
+    text-align: center;
+    background-color: white;
+    position:absolute;
+    left: 50%;
+    height: 1.5em;
+    transform:translateX(-50%);
+    top:-0.75em ;
+}
+.brands__img >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+/* button hover */
