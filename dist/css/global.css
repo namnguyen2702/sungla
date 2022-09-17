@@ -1,0 +1,109 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font:inherit
+}
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,body {
+    height: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/*root*/
+:root{
+  --fs-primary:14px;
+  --fw-primary:600;
+  --fw-product-price:500;
+  --fs-sm:12px;
+  --fs-2xl:86px;
+  --fs-md:18px;
+  --fs-xl:48px;
+  --fs-lg:22px;
+  --fs-title:24px;   
+  --color-primary:black;
+  --gray-4:#BDBDBD;
+  --color-sale:#EB5757; 
+  --gray-1:#828282; 
+}
+/*utility classes*/
+.fs-primary{
+  font-size: var(--fs-primary);
+}
+
+.fw-primary{
+  font-weight: var(--fw-primary);
+}
+
+.fw-product-price{
+  font-weight: var(--fw-product-price);
+}
+
+.fs-sm{
+  font-size: var(--fs-sm);
+}
+
+.fs-2xl{
+  font-size:var(--fs-2xl);
+}
+
+.fs-md{
+  font-size: var(--fs-md);
+}
+
+.fs-xl{
+  font-size: var(--fs-xl);
+}
+
+.fs-lg{
+  font-size: var(--fs-lg);
+}
+
+.primary-text{
+  color: var(--color-primary);
+}
+
+.bg-primary{
+  background-color: var(--color-primary);
+}
+
+.text-gray-4{
+  color: var(--gray-4);
+}
+
+.text-gray-1{
+  color:var(--gray-1);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-x-14{
+  max-width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}   
