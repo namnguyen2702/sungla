@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="../dist/css/global.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sungla-Home</title>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="nav-item">
-                    <ion-icon name="search-outline"></ion-icon>
-                </div>
-                <div class="nav-item">
-                    <img src="./assets/img/logo.png" alt="" srcset="">
-                </div>
-                <div class="nav-item">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <ion-icon name="cart-outline"></ion-icon>
-                </div>
-            </div>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fs-primary bg-primary fw-primary">
+        <div class="navbar__logo">Sungla</div>
+        <div class="navbar__items">
+          <div class="navbar-item">
+            <a href="">Home</a>
+          </div>
+          <div class="navbar-item">
+            <a href="">Shop</a>
+          </div>
+          <div class="navbar-item">
+            <a href="">Blog</a>
+          </div>
+          <div class="navbar-item">
+            <a href="">Sale</a>
+          </div>
+          <div class="navbar-item">
+            <a href="">Contact us</a>
+          </div>
+          <div class="navbar-item">
+            <div class="navbar-search">Search</div>
+          </div>
         </div>
-            <ul class="warper center subnav" id="toggle-nav">
-                <li class="subnav-item"><a class="active" href="">Men</a></li>
-                <li class="subnav-item"><a href="">Women</a></li>
-                <li class="subnav-item"><a href="">Brands</a></li>
-                <li class="subnav-item"><a href="">Outlet</a></li>
-                <li class="subnav-item"><a href="">Contact</a></li>
-                <li class="subnav-item"><a href="">Sales Off</a></li>
-            </ul>
-        <div class="announcement-bar">
-            <div class="announcement-slider">
-                <div class="announcement__slider--title">10% sales off</div>
-                <div class="announcement__slider--title">15% sales off</div>
-                <div class="announcement__slider--title">16% sales off</div>
-                <div class="announcement__slider--title">17% sales off</div>
+        <div class="navbar__feature">
+          <div class="navbar__feature_account">
+            <div class="navbar__feature_account--signIn">Sign In</div>
+            <div class="navbar__feature_account--signUp">Create an account</div>
+          </div>
+          <div class="navbar__feature_subFeature center">
+            <div class="navbar__feature_subFeature--favorites">
+              <ion-icon name="heart-outline"></ion-icon>
             </div>
-            <a class="store-locator">
-                <ion-icon name="location-outline"></ion-icon>
-                Store Locator
-            </a>
-            <div id="toggle-icon">
-                <ion-icon name="list-outline"></ion-icon>
-            </div>     
+            <div class="navbar__feature_subFeature--cart">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- content -->
+    <div class="container-x-14">
+      <div class="banner">
+        <img class="banner__img" src="assets/img/banner.jpg" />
+        <div class="banner__content">
+          <div class="banner__content_text">
+            SUMMER SALE GET 30% OFF On all sunglasses.
+          </div>
+        </div>
+      </div>
     </div>
-   <div class="container">
-
-   </div>
-   <script src="./assets/js/main.js"></script>
-</body>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
