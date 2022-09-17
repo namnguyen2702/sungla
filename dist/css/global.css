@@ -1,3 +1,4 @@
+
 /* reset css */
 *,
 *::before,
@@ -31,6 +32,15 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+/* Font */
+@font-face {
+  font-family: 'Oswald' ;
+  src: url('/dist/font/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family:'Roboto';
+  src: url(/dist/font/RobotoCondensed-Regular.ttf);
 }
 /*root*/
 :root{
@@ -106,4 +116,4 @@ picture {
   max-width: 100%;
   padding-left: 14px;
   padding-right: 14px;
-}   
+}    
