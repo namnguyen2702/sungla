@@ -1,118 +1,158 @@
-.navbar{
-    padding-inline: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    height: 7rem;
-    color: white;
-    font-family: 'Oswald';
-    text-transform: uppercase;
-}
-a{
-    text-decoration: none;
-}
-.navbar__logo{
-    font-size: 25px;
-    font-weight: 700;
-}
-.navbar__items{
-    display: flex;
-    gap:0.5em;
-    flex-wrap: wrap;
-}
-
-.navbar-item {
-  padding: 0.5em;
-  display: block;
-}
-
-.navbar-item > a{
-    color: white;
-}
-.navbar__feature,.navbar__feature_account{
-    display: flex;
-    flex-wrap: wrap;
-}
-.navbar__feature{
-    gap:1rem;
-}
-.navbar__feature_account>*{
-    padding:0.5em ;
-}
-.navbar__feature_subFeature{
-    gap:0.5rem;
-    font-size: 18px;
-}
 .banner {
-    margin-top: 20px;
-    font-family: 'Oswald';
-    display: grid;
-    width: 1005;
-    place-items: center;
-    justify-items: start;
+  width: 100%;
+  height: fit-content;
+  font-family: 'Oswald';
 }
-.banner > *{
-    grid-column: 1/-1;
-    grid-row:1/-1;
+.banner__content {
+  padding-top: 0.3em;
+  display: grid;
+  gap: 1em;
+  grid-template-areas: 
+  'i'
+  'c'
+  'b'
+  ;
+  width: fit-content;
+  text-align: center;
 }
-.banner__img{
-    width:100%;
-    height: 70vh;
+.banner__content_img {
+    grid-row: i;
+  width: 250px;
+  aspect-ratio: 1 / 1.5;
+  margin-left: auto;
+  margin-right: auto;
 }
-.banner__content{
-    margin: 4em;
-    /* Media */
-    display: block;
-    border-right: 1px solid white;
-    border-top: 1px solid white;
+.banner__content_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.banner__content_text{
-    width: 7em;
-    height: fit-content;
-    color: white;
+.banner__img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.banner__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner__content_text {
+    grid-row: c;
+  font-weight: var(--fw-primary);
+  padding-inline: 1em;
+  text-transform: uppercase;
 }
 .banner__content_text > span {
-    -webkit-text-stroke: 0.5px red;
-    color: white; 
-}
-.banner__content_button{
-    margin-top: 2em;
-    color: white;
-    width: fit-content;
-    border:1px solid white;
-    padding-inline: 1em;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+  -webkit-text-stroke: 0.1px salmon;
 }
 
-.brands{
-    margin-top:30px ;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 10px;
-    border: 2px solid #C4C4C4;
-    position: relative;
+.banner__content_button {
+    grid-row: b;
+  text-align: center;
+  color: black;
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  padding: 0.5em 3em;
+  border: 2px solid black;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
-.brands::after{
-    content: "Choose your Brand";
-    font-size: 20px;
-    /* media */
-    font-family: 'Oswald';
-    width: 10em;
-    text-align: center;
-    background-color: white;
-    position:absolute;
-    left: 50%;
-    height: 1.5em;
-    transform:translateX(-50%);
-    top:-0.75em ;
+
+.brands-selection {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 80px);
+  gap: 14px;
 }
-.brands__img >img {
+.brands-selection__item {
+  width: 100%;
+  border: 2px solid #c4c4c4;
+}
+.brands-selection__item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.advertisement {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 140px);
+}
+.advertisement__item_content{
+    display: flex;
     width: 100%;
-    height: 100%;
-    object-fit: cover;   
+    flex-direction: column;
+    align-items: center;
 }
-/* button hover */
+.span-row-2 {
+  grid-row: span 2;
+}
+.bg-light {
+  background-color: seashell;
+}
+.bg-light-1 {
+  background-color: salmon;
+}
+.bg-light-2 {
+  background-color: burlywood;
+}
+.advertisement__item {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+}
+.advertisement__item_img {
+  width: 50%;
+  height: 100%;
+}
+
+.advertisement__item_button {
+  text-align: center;
+  margin-top: 8px;
+  width: fit-content;
+  padding: 1em 3em;
+  border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+  .banner__content {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    'c c i i'
+    'b b i i';
+    text-align: left;
+  }
+  .banner__content_text{
+    grid-column: c;
+    width: 100%;
+    padding-right: 0;
+  }
+  .banner__content_button{
+    grid-column: b;
+    display: flex;
+    align-items: center;
+  }
+  .banner__content_img{
+    grid-column: i;
+    width: 300px;
+    grid-row: span 2;
+  }
+  .brands-selection{
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+  }
+  .advertisement{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    '1 2'
+    '3 2';
+    grid-template-rows: 300px;
+  }
+}
