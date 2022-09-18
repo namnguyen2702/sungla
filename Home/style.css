@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/RobotoCondensed-Regular.ttf');
+}
 .banner {
   width: 100%;
   height: fit-content;
