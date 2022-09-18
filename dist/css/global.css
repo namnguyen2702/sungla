@@ -37,11 +37,11 @@ picture {
 /* Font */
 @font-face {
   font-family: 'Oswald';
-  src: url('/dist/font/Oswald-Regular.ttf') format('truetype');
+  src: url('../font/Oswald-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
-  src: url(/dist/font/RobotoCondensed-Regular.ttf);
+  src: url('../font/RobotoCondensed-Regular.ttf');
 }
 /*root*/
 :root {
