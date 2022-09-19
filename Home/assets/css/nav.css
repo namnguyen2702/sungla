@@ -66,7 +66,7 @@
 }
 @media (min-width: 768px){
     .nav-bar{
-        z-index: 1;
+        z-index: 8;
     }
     .nav-bar__toggleButton{
         display: none;
