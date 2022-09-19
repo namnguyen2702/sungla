@@ -18,7 +18,7 @@
     width: 100%;
     top: 100%;
     transition: all ease-in-out 500ms;
-    z-index: 1;
+    z-index: 5;
 }
 .nav-bar__items{
     width: 100%;
@@ -31,7 +31,7 @@
     width: 100%;
     height: 100%;
     left: -100%;
-    z-index: 3;
+    z-index: 8;
     transition: all ease-in-out;
 }
 .nav-bar__logo{ 
