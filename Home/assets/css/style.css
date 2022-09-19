@@ -120,11 +120,7 @@
   width: 50%;
   height: 100%;
 }
-.brands-selection > *{
-  opacity: 0.8;
-}
 .brands-selection > *:hover{
-  opacity: 1;
   border-color: red;
 }
 .advertisement__item_button {
