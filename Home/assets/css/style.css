@@ -115,6 +115,7 @@
   align-items: center;
   text-transform: uppercase;
   font-family: 'Oswald';
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .advertisement__item_img {
   width: 50%;
@@ -129,7 +130,13 @@
   width: fit-content;
   padding: 1em 3em;
   border: 2px solid black;
+  transition: all ease-in-out 700ms;
 }
+
+.advertisement__item :hover  .advertisement__item_button  {
+  background-color: black;
+  color: white;
+} 
 .product-section{
   padding-top: 1em;
   padding-bottom: 1em;
