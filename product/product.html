@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product-page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
+  <link rel="stylesheet" href="/dist/css/global.css" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <section class="product">
+    <div class="container">
+      <div class="product-slides">
+        <div class="numbertext">1 / 3</div>
+        <img src="/product/imgs/Rectangle 7.png" >
+      </div>
+    
+      <div class="product-slides">
+        <div class="numbertext">2 / 3</div>
+        <img src="/product/imgs/Rectangle 7.png" >
+      </div>
+    
+      <div class="product-slides">
+        <div class="numbertext">3 / 3</div>
+        <img src="/product/imgs/Rectangle 7.png" >
+      </div>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="small-img">
+        <div class="column">
+          <img class="simg cursor" src="/product/imgs/Rectangle 7.2.png"  onclick="currentSlide(1)" alt="">
+          <img class="simg cursor" src="/product/imgs/Rectangle 7.3.png" onclick="currentSlide(2)" alt="">
+          <img class="simg cursor" src="/product/imgs/Rectangle 7.5.png"  onclick="currentSlide(3)" alt="">
+        </div>
+      </div>
+      <div class="tx row">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#"> Womens Dress </a></li>
+          <li>Angels malu</li>
+        </ul>
+      </div>
+      <div class="product-content-right-1">
+        <div class="product-content-right-name ">
+          <p class="fendi">FENDI</p>
+          <h1 class="heading fs-2xl">Women Black Checked Fit and Flare Dress</h1>
+        </div>
+        <div class="product-content-select">
+        <div class="product-content-right-select-size-text row">
+          <p class="select-size">SELECT SIZE(INCHES)</p>
+          <p class="Size-quide"><a href="">Size quide</a></p>
+        </div>
+        <div class="product-content-right-select-size">
+          <div class="size">
+            <span>OSFA</span>
+            <span>W26</span>
+            <span>W27</span>
+            <span>W28</span>
+            <span>W29</span>
+            <span>W30</span>
+            <span>W31</span>
+            <span>W32</span>
+            <span>W33</span>
+            <span>W34</span>
+            <span>W35</span>
+            <span>W36</span>
+            <span>W38</span>
+            <span>W40</span>
+            <span>W42</span>
+            <span>W44</span>
+            <span>W46</span>
+            <span>W48</span>
+            <span>W50</span>
+            <span>W52</span>
+          </div>
+            <select class="custom-select-size">
+              <option value="0">OFSA</option>
+              <option value="1">w27</option>
+              <option value="2">w28</option>
+              <option value="3">w29</option>
+              <option value="4">w30</option>
+              <option value="5">w31</option>
+              <option value="6">w32</option>
+              <option value="7">w33</option>
+              <option value="8">w34</option>
+              <option value="9">w35</option>
+              <option value="10">w36</option>
+              <option value="11">w38</option>
+              <option value="12">w50</option>
+            </select>
+        </div>
+        <div class="row">
+        <div class="product-content-right-button-added">
+          <p class="quanity " >QUANTITY</p>
+          <div class="buttons_added">
+            <input class="minus is-form" type="button" value="-">
+            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+            <input class="plus is-form" type="button" value="+">
+          </div>
+        </div>
+        <div class="product-content-right-price">
+          <p class="price-total">PRICE TOTAL</p>
+          <p style="font-weight: 900 ;" class="price" >90,00 EUR</p>
+        </div>
+      </div>
+        </div>
+        <div class="product-content-right-button-add-bag row">
+          <button class="btn1 bag">ADD TO BAG</button>
+          <button class="btn2 save">SAVE</button>
+        </div>
+      </div>
+      <div class="product-content-right-2">
+        <div class="product-right-button">
+        <button class="btn contact">CONTACT US</button>
+      </div>
+      </div>
+      <div class="product-content-bottom">
+        <div class="Text-Accordion">
+          <button class="accordion">Details</button>
+          <div class="panel">
+            <div class="panel-content-1 grid-item">
+              <h2>ABOUT PRODUCT</h2>
+              <p>Cool off this summer in the Mini Ruffle Smocked Tank Top from our very own LA Hearts.
+                This tank features a smocked body, adjustable straps, scoop neckline, ruffled hems, and a cropped fit.
+              </p>
+            </div>
+            <div class="panel-content-2 grid-item">
+              <h2>ADVANTAGES</h2>     
+                <ul>
+                  <li>Smocked body</li>
+                  <li>Adjustable straps</li>
+                  <li>Scoop neckline</li>
+                  <li>Ruffled hems</li>
+                  <li>Cropped length</li>
+                  <li>Model is wearing a small</li>
+                  <li>100% rayon</li>
+                  <li>Machine washable</li>
+                </ul>
+            </div>
+            <div class="panel-content-3 grid-item">
+              <h2>ADVANTAGES</h2>
+                <ul>
+                  <li>Smocked body</li>
+                  <li>Adjustable straps</li>
+                  <li>Scoop neckline</li>
+                </ul>
+            </div>
+            <div class="panel-content-4 grid-item">
+              <h2>SHIPPING</h2>
+              <p>We offer Free Standard Shipping for all orders over $75 to the 50 states and the District of Columbia.
+                The minimum order value must be $75 before taxes, shipping and handling. Shipping fees are
+                non-refundable.
+
+                Please allow up to 2 business days (excluding weekends, holidays, and sale days) to process your order.
+
+                Processing Time + Shipping Time = Delivery Time</p>
+            </div>
+          </div>
+          <button class="accordion">Other information</button>
+          <div class="panel">
+            </div>
+            <button class="accordion">Other tab</button>
+          <div class="panel">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/product.js"></script>
+</body>
+
+</html>
