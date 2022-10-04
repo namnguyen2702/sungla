@@ -8,8 +8,8 @@
   <title>Product-page</title>
   <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
-  <link rel="stylesheet" href="/sungla/dist/css/global.css" />
-  <link rel="stylesheet" href="/sungla/product/assets/css/style.css">
+  <link rel="stylesheet" href="../dist/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -17,17 +17,17 @@
     <div class="container">
       <div class="product-slides">
         <div class="numbertext">1 / 3</div>
-        <img src="/sungla/product/assets/imgs/Rectangle 7.png" >
+        <img src="./assets/imgs/Rectangle 7.png" >
       </div>
     
       <div class="product-slides">
         <div class="numbertext">2 / 3</div>
-        <img src="/sungla/product/assets/imgs/Rectangle 7.png" >
+        <img src="./assets/imgs/Rectangle 7.png" >
       </div>
     
       <div class="product-slides">
         <div class="numbertext">3 / 3</div>
-        <img src="/sungla/product/assets/imgs/Rectangle 7.png" >
+        <img src="./assets/imgs/Rectangle 7.png" >
       </div>
     
       <div class="caption-container">
@@ -36,9 +36,9 @@
     
       <div class="small-img">
         <div class="column">
-          <img class="simg cursor" src="/sungla/product/assets/imgs/Rectangle 7.2.png"  onclick="currentSlide(1)" alt="">
-          <img class="simg cursor" src="/sungla/product/assets/imgs/Rectangle 7.3.png" onclick="currentSlide(2)" alt="">
-          <img class="simg cursor" src="/sungla/product/assets/imgs/Rectangle 7.5.png"  onclick="currentSlide(3)" alt="">
+          <img class="simg cursor" src="./assets/imgs/Rectangle 7.2.png"  onclick="currentSlide(1)" alt="">
+          <img class="simg cursor" src="./assets/imgs/Rectangle 7.3.png" onclick="currentSlide(2)" alt="">
+          <img class="simg cursor" src="./assets/imgs/Rectangle 7.5.png"  onclick="currentSlide(3)" alt="">
         </div>
       </div>
       <div class="tx row">
@@ -101,9 +101,9 @@
         <div class="product-content-right-button-added">
           <p class="quanity " >QUANTITY</p>
           <div class="buttons_added">
-            <input class="minus is-form" type="button" value="-">
-            <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
-            <input class="plus is-form" type="button" value="+">
+            <input class="minus qty-change is-form" type="button" value="-">
+            <input aria-label="quantity" class="input-qty" type="number" >
+            <input class="plus qty-change is-form" type="button" value="+">
           </div>
         </div>
         <div class="product-content-right-price">
@@ -174,7 +174,7 @@
       </div>
     </div>
   </section>
-  <script src="/sungla/product/assets/js/product.js"></script>
+  <script src="./assets/js/product.js"></script>
 </body>
 
 </html>
