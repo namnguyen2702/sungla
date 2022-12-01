@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/RobotoCondensed-Regular.ttf');
+}
+
+.my-wishlist {
+  width: 70%;
+  margin: auto;
+  font-family: 'Oswald';
+}
+
+.container {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  padding: 4rem;
+  grid-gap: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-wishlist>ul {
+  text-align: center;
+}
+
+.my-wishlist>h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+ul.breadcrumb {
+  padding: 0.6rem 0.6rem;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 0.5rem;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+#CrAcc{
+  display: none;
+}
+.MyW{
+  display: none;
+}
+.select{
+  display: none;
+}
+
+.tab {
+  grid-column: 1;
+  float: left;
+  border: none;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  grid-column: 2;
+  float: left;
+  padding: 0rem 0.8rem;
+  border: none;
+  width: 100%;
+  border-left: none;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.5rem;
+  background-color:none;
+}
+.item7{
+  grid-column:  1 / span 3;
+}
+.text-inf{
+  font-weight: 400;
+}
+.price{
+  color: #828282;
+}
+.btn1{
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  color: #3F3F3F;
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+}
+.btn{
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  color: aliceblue;
+  background-color: black;
+  cursor: pointer;
+}
+.btn2{
+  margin-top: 2rem;
+  background-color: #F0F2F2;
+  border: 2px solid #C4C4C4;
+  padding: 0.2rem 1.3rem;
+  margin-right: 1rem;
+  color: #828282;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+@media (max-width:768px) {
+  .my-wishlist{
+    width: 100%;
+  }
+  .my-wishlist>h1{
+    display: none;
+  }
+  .container{
+    display: block;
+    padding: 0;
+    border: none;
+    margin-top: 1rem;
+  }
+  .tab{
+    display: none;
+  }
+  .tabcontent{
+    width: 100%;
+  }
+  #MyD{
+    display: none;
+  }
+  #CrAcc{
+    display: inline-block;
+  }
+  .my-wishlist>ul{
+    text-align: left;
+    padding: 0.8rem;
+  }
+  .MyW{
+    display: block;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #828282;
+  }
+  .select{
+    display: block;
+    margin: 0 0.8rem 0 0.8rem;
+  }
+  .select-tab {
+    display: block;
+    font-weight: 500;
+    color: black;
+    background-color: #F0F2F2;
+    padding: .6em .8em .6em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    margin-bottom: 0.8rem;
+  }
+   option:active{
+    background-color: #F0F2F2;
+    color: black;
+  }
+  option:hover{
+    color: black;
+    background-color: #F0F2F2;
+  }
+  .select-tab:hover {
+    background-color: #F0F2F2;
+  }
+  .select-tab:focus {
+    border-color:none;
+    background-color: #F0F2F2 ;
+    color: #222; 
+    outline: none;
+  } 
+  .grid-item{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .item7{
+    grid-column:  1 / span 2;
+  }
+  .btn{
+    display: block;
+    width: 100%;
+  }
+  .btn2{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    
+  }
+  .btn1{
+    display: none;
+  }
+}
