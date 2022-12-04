@@ -21,7 +21,7 @@ html {
 }
 .board-content{
   display: flex;
-  justify-content: center;
+  
   border: #C4C4C4 1px solid;
   margin: 0px 250px;
   padding: 70px 100px;
