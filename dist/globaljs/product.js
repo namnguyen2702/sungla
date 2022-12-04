@@ -72,10 +72,58 @@ const listProducts = [
     'rcmd',
     4
   ),
+  new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info dhasdasjgdas',
+    ['L', 'MD', 'SM'],
+    300,
+    true,
+    250,
+    3,
+    'rcmd',
+    5
+  ),
+  new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info dhasdasjgdas',
+    ['L', 'MD', 'SM'],
+    300,
+    true,
+    250,
+    3,
+    'rcmd',
+    6
+  ),
+  new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info dhasdasjgdas',
+    ['L', 'MD', 'SM'],
+    300,
+    true,
+    250,
+    3,
+    'rcmd',
+    7
+  ),
+  new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info dhasdasjgdas',
+    ['L', 'MD', 'SM'],
+    300,
+    true,
+    250,
+    3,
+    'rcmd',
+    8
+  ),
 ];
 // feature : rcmd new men women
 class ListGlass {
-  constructor(listOfGlass) {
+  constructor(listOfGlass = []) {
     const storaged = window.localStorage.getItem('listProducts')
       ? JSON.parse(window.localStorage.getItem('listProducts'))
       : [];
@@ -189,6 +237,9 @@ class Cart {
     this.saveLocal();
   }
   saveLocal() {
+    this.list = this.list.filter(
+      (v, i, a) => a.findIndex((v2) => v2.id === v.id) === i
+    );
     window.localStorage.setItem('cart', JSON.stringify(this.list));
   }
 
