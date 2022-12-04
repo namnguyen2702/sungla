@@ -15,30 +15,13 @@
 <body>
   <section class="product">
     <div class="container">
-      <div class="product-slides">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/imgs/im1.webp" >
-      </div>
-    
-      <div class="product-slides">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/imgs/im1.webp" >
-      </div>
-    
-      <div class="product-slides">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/imgs/im1.webp" >
-      </div>
-    
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-    
-      <div class="small-img">
-        <div class="column">
-          <img class="simg cursor" src="./assets/imgs/Rectangle 7.2.png"  onclick="currentSlide(1)" alt="">
-          <img class="simg cursor" src="./assets/imgs/Rectangle 7.3.png" onclick="currentSlide(2)" alt="">
-          <img class="simg cursor" src="./assets/imgs/Rectangle 7.5.png"  onclick="currentSlide(3)" alt="">
+      <div class="Img_modal">
+        <img id="myImg" src="./assets/imgs/im6.webp" alt="sunglass">
+        
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
       </div>
       <div class="tx row">
@@ -51,14 +34,14 @@
       <div class="product-content-right-1">
         <div class="product-content-right-name ">
           <p class="fendi fs-sm">FENDI</p>
-          <h1 class="heading fs-2xl">Ben Sherman BS LEO M03 Aviator Polarized Sunglasses</h1>
+          <h1 class="heading fs-xl">Ben Sherman BS LEO M03 Aviator Polarized Sunglasses</h1>
         </div>
         <div class="product-content-select">
-        <div class="product-content-right-select-size-text row">
-          <p class="select-size fs-sm">SELECT SIZE(INCHES)</p>
-          <p class="Size-quide fs-sm"><a href="">Size quide</a></p>
-        </div>
-        <div class="product-content-right-select-size">
+          <div class="product-content-right-select-size-text row">
+            <p class="select-size fs-sm">SELECT SIZE(INCHES)</p>
+            <p class="Size-quide fs-sm"><a href="">Size quide</a></p>
+          </div>
+          <div class="product-content-right-select-size">
             <select class="custom-select-size fs-sm">
               <option value="0">45MM</option>
               <option value="1">46MM</option>
@@ -74,21 +57,21 @@
               <option value="11">56MM</option>
               <option value="12">57MM</option>
             </select>
-        </div>
-        <div class="row">
-        <div class="product-content-right-button-added">
-          <p class="quanity fs-sm" >QUANTITY</p>
-          <div class="buttons_added">
-            <input class="minus qty-change is-form" type="button" value="-">
-            <input aria-label="quantity" class="input-qty" type="number" >
-            <input class="plus qty-change is-form" type="button" value="+">
           </div>
-        </div>
-        <div class="product-content-right-price">
-          <p class="price-total fs-sm">PRICE TOTAL</p>
-          <p style="font-weight: 900 ;" class="price fw-product-price" >90,00 EUR</p>
-        </div>
-      </div>
+          <div class="row">
+            <div class="product-content-right-button-added">
+              <p class="quanity fs-sm">QUANTITY</p>
+              <div class="buttons_added">
+                <input class="minus qty-change is-form" type="button" value="-">
+                <input aria-label="quantity" class="input-qty" type="number">
+                <input class="plus qty-change is-form" type="button" value="+">
+              </div>
+            </div>
+            <div class="product-content-right-price">
+              <p class="price-total fs-sm">PRICE TOTAL</p>
+              <p style="font-weight: 900 ;" class="price fw-product-price">90,00 EUR</p>
+            </div>
+          </div>
         </div>
         <div class="product-content-right-button-add-bag row">
           <button class="btn1 bag fs-sm">ADD TO BAG</button>
@@ -102,8 +85,8 @@
       </div>
       <div class="product-content-right-2">
         <div class="product-right-button">
-        <button class="btn contact fs-sm">CONTACT US</button>
-      </div>
+          <button class="btn contact fs-sm">CONTACT US</button>
+        </div>
       </div>
       <div class="product-content-bottom">
         <div class="Text-Accordion">
@@ -111,37 +94,40 @@
           <div class="panel">
             <div class="panel-content-1 grid-item fs-sm">
               <h2>ABOUT PRODUCT</h2>
-              <p class="fs-sm">The choices of the materials used at Ben Sherman is critical to ensure reduction in the environmental impact of their products
+              <p class="fs-sm">The choices of the materials used at Ben Sherman is critical to ensure reduction in the
+                environmental impact of their products
               </p>
             </div>
             <div class="panel-content-2 grid-item fs-sm">
-              <h2>ADVANTAGES</h2>     
-                <ul>
-                  <li>To protect the eyes from sunlight</li>
-                  <li>To prevent glare</li>
-                  <li>For the prevention of ocular turbidity</li>
-                  <li>To avoid wind and dust</li>
-                  <li>To look fashionable</li>
-                  <li>To highlight the face</li>
-                  <li>To protect your eyes while playing sports</li>
-                  <li>To hide... you cried</li>
-                </ul>
+              <h2>ADVANTAGES</h2>
+              <ul>
+                <li>To protect the eyes from sunlight</li>
+                <li>To prevent glare</li>
+                <li>For the prevention of ocular turbidity</li>
+                <li>To avoid wind and dust</li>
+                <li>To look fashionable</li>
+                <li>To highlight the face</li>
+                <li>To protect your eyes while playing sports</li>
+                <li>To hide... you cried</li>
+              </ul>
             </div>
             <div class="panel-content-3 grid-item fs-sm">
               <h2>ADVANTAGES</h2>
-                <ul>
-                  <li>To protect the eyes from sunlight</li>
-                  <li>To prevent glare</li>
-                  <li>To avoid wind and dust</li>
-                </ul>
+              <ul>
+                <li>To protect the eyes from sunlight</li>
+                <li>To prevent glare</li>
+                <li>To avoid wind and dust</li>
+              </ul>
             </div>
             <div class="panel-content-4 grid-item fs-sm">
               <h2>SHIPPING</h2>
-              <p>We offer Free Standard Shipping for all orders over $75 to the 50 states and the District of Columbia.
+              <p>We offer Free Standard Shipping for all orders over $75 to the 50 states and the District of
+                Columbia.
                 The minimum order value must be $75 before taxes, shipping and handling. Shipping fees are
                 non-refundable.
 
-                Please allow up to 2 business days (excluding weekends, holidays, and sale days) to process your order.
+                Please allow up to 2 business days (excluding weekends, holidays, and sale days) to process your
+                order.
 
                 Processing Time + Shipping Time = Delivery Time</p>
             </div>
@@ -149,22 +135,72 @@
           <button class="accordion fs-xl">Other information</button>
           <div class="panel">
             <br>
-            <h2>ABOUT THE DESIGNER</h2>
-            <p>The choices of the materials used at Ben Sherman is critical to ensure reduction 
-              in the environmental impact of their products. The sunglass collection is entirely 
-              made using green materials, such as renewable, bio-based TREENEW plastic made in America
-               and polarized lenses derived from bio-material like organic fibers of cotton and wood.
-                Ben Sherman was a legend in his own right. A man described as ‘always embracing the 
-                new and the different'; someone constantly searching for the best of things. He was 
-                a passionate businessman with an artist’s soul. Ben started making shirts for other 
-                people, but soon his creative flair took over and he started designing his own shirts. As a modern British icon, 
-              Ben Sherman has always been for the individuals, for those that set 
-              themselves apart and today remains a leader of modern British style.</p>
+            <div class="panel-content fs-sm">
+              <h2>ABOUT THE DESIGNER</h2>
+              <p>The choices of the materials used at Ben Sherman is critical to ensure reduction
+                in the environmental impact of their products. The sunglass collection is entirely
+                made using green materials, such as renewable, bio-based TREENEW plastic made in America
+                and polarized lenses derived from bio-material like organic fibers of cotton and wood.
+                Ben Sherman was a legend in his own right. A man described as 'always embracing the
+                new and the different'; someone constantly searching for the best of things. He was
+                a passionate businessman with an artist's soul. Ben started making shirts for other
+                people, but soon his creative flair took over and he started designing his own shirts. As a modern
+                British icon,
+                Ben Sherman has always been for the individuals, for those that set
+                themselves apart and today remains a leader of modern British style.</p>
             </div>
-            <button class="accordion fs-xl">Other tab</button>
+          </div>
+          <button class="accordion fs-xl">Other tab</button>
           <div class="panel">
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="product_also">
+        <div class="content__text">
+          <p class="text__3 fs-xl">
+              You May Also Like
+          </p>
+
+      </div>
+      <div class="content__item-x5">
+          <div class="item__x5"><img src="./assets/imgs/im2.jpg" alt="">
+              <div class="post__content">
+                  <p class="text__x5">
+                      <h4 class="text_first fs-md">TOP Sunglass</h4>
+                      Angels malu zip jeans slim black used <br>
+                      <h1 class="text__boder">139,00 EUR</h1>
+                  </p>
+              </div>
+          </div>
+          <div class="item__x5"><img src="./assets/imgs/im2.jpg" alt="">
+              <p class="text__x5">
+                  <h4 class="text_first fs-md">TOP Sunglass</h4>
+                  Angels malu zip jeans slim black used <br>
+                  <h1 class="text__boder">139,00 EUR</h1>
+              </p>
+          </div>
+          <div class="item__x5"><img src="./assets/imgs/im2.jpg" alt="">
+              <p class="text__x5">
+                  <h4 class="text_first fs-md">TOP Sunglass</h4>
+                  Angels malu zip jeans slim black used <br>
+                  <h1 class="text__boder">139,00 EUR</h1>
+              </p>
+          </div>
+          <div class="item__x5"><img src="./assets/imgs/im2.jpg" alt="">
+              <p class="text__x5">
+                  <h4 class="text_first fs-md">TOP Sunglass</h4>
+                  Angels malu zip jeans slim black used <br>
+                  <h1 class="text__boder">139,00 EUR</h1>
+              </p>
+          </div>
+          <div class="item__x5"><img src="./assets/imgs/im2.jpg" alt="">
+              <p class="text__x5">
+                  <h4 class="text_first fs-md">TOP Sunglass</h4>
+                  Angels malu zip jeans slim black used <br>
+                  <h1 class="text__boder">139,00 EUR</h1>
+              </p>
+          </div>
+      </div>
       </div>
     </div>
   </section>

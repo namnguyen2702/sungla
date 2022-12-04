@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+* {
+    box-sizing: inherit;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#createacc{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  line-height: 90%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 10%;
+}
+.main-form {
+  border: #C4C4C4 1px solid;
+  padding: 70px;
+}
+.form-group {
+  display: flex;
+}
+input[type=text] {
+  width: 300px;
+  height: 30px;
+}
+.form-signup{
+  display: flex;
+}
+.txt-signup{
+  font-weight: 13px;
+  color: #828282;
+}
+label:after {
+  content: " *";
+  color: red;
+}
+label {
+  display: block;
+  width: 150px;
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+  color: #3F3F3F;
+}
+.form-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.btnRegister{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.btnBack{
+  color: gray;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btnRegister:hover{
+  opacity: 0.5;
+  box-shadow: 5px 5px 5px gray;
+}
+.btnBack:hover{
+  color: black;
+  background-color: gray;
+  box-shadow: 5px 5px 5px gray;
+}
+/* .form__signup--none{
+  display: ;
+} */
+@media screen and (max-width:768px) {
+  #createacc{
+    align-items: center;
+  }
+  h1{
+    width: auto;
+  }
+  .main-form{
+    padding: unset;
+    padding-left: 10px;
+  }
+  .form-group{
+    width: 100%;
+  }
+  input[type=text]{
+    width: 100%;
+  }
+}
+

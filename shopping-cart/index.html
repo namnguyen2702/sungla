@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="/dist/css/global.css">
+    <link rel="stylesheet" href="./asset/css/shopping.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div class="content">
+            <div class="content-header fs-2xl">
+                <p>Shopping Cart</p>
+            </div>
+        </div>
+        <div class="items-content">
+            <div class="items-content-header">
+                <div class="list-items">
+                    <img src="./asset/img/AVERIE_S_000JR_P02_1800x1800.webp" alt="" width="300px">
+                </div>
+                <div class="list-items1 fs-xl">
+                    Angels malu zip jeans slim black used
+                </div>
+                <div class="list-items2 fs-sm">
+                    Size: 
+                </div>
+                <div class="list-items3 fs-sm">
+                    Art.No.: 434536465
+                </div>
+                <div class="list-items4 fs-sm">
+                    Color:
+                    <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#000000" style="width: 15px; height: 15px;">
+                    
+                </div>
+                <div class="list-items5">
+                    <img src="./asset/img/cross.png" alt="" style="width: 20px; height: 20px">
+                </div>
+                <div class="list-items6">
+                    <img src="./asset/img/edit.png" alt="" style="width: 20px; height: 20px">
+                </div>
+                <div class="list-items7 fs-sm" >QUANTITY</div>
+                <div class="buttons_added list-items8">
+                    <input class="minus add" type="button" value="-">
+                    <input aria-label="quantity" class="input-qty add" type="number" value="1">
+                    <input class="plus add" type="button" value="+">
+                </div>
+                <div class="list-items9 fs-sm">
+                    Price:
+                    <div class="fs-sm">90,00 EUR</div>
+
+                </div>
+
+            </div>
+            <div class="items-content-button fs-sm">
+                <div class="shopping-button bt1">
+                    <button>continue shopping</button>
+                </div>
+                <div class="shopping-button bt2">
+                    <button>clear shopping cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="sub-content">
+            <div class="sub-content-1">
+                <div class="sub-content-header fs-lg">
+                    <p>Apply Discount Code</p>
+                </div>
+                <div class="sub-content-input fs-sm subpart" >
+                    <input type="text" class="subitem" placeholder="Enter discount code">
+                    <span class="subitem2">
+                        <button type="submit" >
+                            Apply
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="sub-content-header fs-lg">
+                <p>Estimate Shipping and Tax</p>
+            </div>
+            <div class="attend-content fs-s" >
+                <p>Enter your destination to get a shipping estimate.</p>
+            </div>
+            <div class="sub-content-info fs-sm part">
+                <p class="item">Country <em>*</em></p>
+                <input type="text" class="item1">
+            </div>
+            <div class="sub-content-info fs-sm part">
+                <p class="item">State/Province <em>*</em></p>
+                <input type="text" class="item1">
+            </div>
+            <div class="sub-content-info fs-sm part">
+                <p class="item">Zip/Postal Code <em>*</em></p>
+                <input type="text" class="item1">
+            </div>
+            <div class="sub-content-radio fs-sm">
+                <p>Flat Rate</p>
+                <div class="item-input">
+                    <input type="radio" name="input" value="Flat Rate"> Fixed 5.00 EUR
+                </div>
+            </div>
+            <div class="sub-content-radio fs-sm">
+                <p>Best Way</p>
+                <div class="item-input">
+                    <input type="radio" name="input" value="Best Way"> Table Rate 10.00 EUR
+                </div>
+            </div>
+        </div>
+        <div class="sub-content1 style-border">
+            <div class="sub-content-price fs-sm subpart">
+                <div class="subitem">Subtotal</div>
+                
+                <div class="subitem2">120.00 EUR</div>
+            </div>
+            <div class="sub-content-price-1 fs-sm subpart">
+                <div class="subitem">
+                    Tax
+                </div>
+                <div class="subitem2">
+                    0.00 EUR
+                </div>
+            </div>
+            <div class="sub-content-price fs-lg subpart">
+                <div class="subitem">
+                    Order Total
+                </div>
+                <div class="subitem2">
+                    120.00 EUR
+                </div>
+            </div>
+            <div class="sub-content-price fs-sm check-out">
+                <p>Check Out with Multiple Addresses</p>
+            </div>
+            <div class="fs-sm bot">
+                <p>proceed to checkout</p>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/js/add.js"></script>
+</body>
+</html>
