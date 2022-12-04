@@ -73,7 +73,7 @@ const listProducts = [
     4
   ),
 ];
-// feature : rcmd new men women 
+// feature : rcmd new men women
 class ListGlass {
   constructor(listOfGlass) {
     const storaged = window.localStorage.getItem('listProducts')
@@ -83,6 +83,12 @@ class ListGlass {
       (v, i, a) => a.findIndex((v2) => v2.id === v.id) === i
     );
     window.localStorage.setItem('listProducts', JSON.stringify(this.list));
+  }
+  static getProduct(productId) {
+    if (this.getListProduct().length > 0) {
+      return this.getListProduct().find((glass) => glass.id == productId);
+    }
+    return null;
   }
   static getListProduct() {
     return window.localStorage.getItem('listProducts')
@@ -137,7 +143,7 @@ class ListGlass {
 
 const listGlass = new ListGlass(listProducts);
 class PayGlass extends Glass {
-  constructor(
+  constructor({
     brand,
     name,
     description,
@@ -148,8 +154,9 @@ class PayGlass extends Glass {
     amount,
     feature,
     id,
-    buyAmount
-  ) {
+    buyAmount,
+    sizeSelected,
+  }) {
     super(
       brand,
       name,
@@ -162,25 +169,27 @@ class PayGlass extends Glass {
       feature,
       id
     );
+    this.buyAmount = buyAmount;
+    this.sizeSelected = sizeSelected;
     //TODO
   }
 }
 class Cart {
-  constructor(listOfGlassBuy) {
+  constructor(listOfGlassBuy = []) {
     const storaged = window.localStorage.getItem('cart')
       ? JSON.parse(window.localStorage.getItem('cart'))
       : [];
-    this.list = [...storaged, ...listOfGlass].filter(
+    this.list = [...storaged, ...listOfGlassBuy].filter(
       (v, i, a) => a.findIndex((v2) => v2.id === v.id) === i
     );
     this.saveLocal();
   }
-  saveLocal() {
-    window.localStorage.setItem('cart', JSON.stringify(this.list));
-  }
   addProduct(product) {
     this.list.push(product);
-    saveLocal();
+    this.saveLocal();
+  }
+  saveLocal() {
+    window.localStorage.setItem('cart', JSON.stringify(this.list));
   }
 
   deleteProduct(productId) {
@@ -191,8 +200,11 @@ class Cart {
     window.localStorage.removeItem('cart');
   }
   static getCartProduct() {
-    return window.localStorage.getItem('listProducts')
-      ? JSON.parse(window.localStorage.getItem('listProducts'))
+    if (!window.localStorage.getItem('cart')) {
+      window.localStorage.setItem('cart', JSON.stringify([]));
+    }
+    return window.localStorage.getItem('cart')
+      ? JSON.parse(window.localStorage.getItem('cart'))
       : [];
   }
 }
