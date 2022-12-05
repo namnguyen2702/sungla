@@ -1,8 +1,14 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 section {
   margin-bottom: 0px !important;
 }
 .cart-section {
   display: flex;
+  flex: 1;
   align-items: center;
 }
 
@@ -176,7 +182,7 @@ button:focus {
 .basket-product {
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
-  position: relative !important; 
+  position: relative !important;
 }
 
 .product-image {
@@ -310,7 +316,9 @@ aside {
   height: 34px;
   width: 100%;
 }
-
+main button , main img {
+    z-index: 1 !important;
+}
 @media screen and (max-width: 640px) {
   .cart-section aside,
   .basket,
@@ -365,12 +373,6 @@ aside {
   .summary {
     width: 100%;
   }
-  section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 @media screen and (max-width: 960px) {
   .cart-section main {
@@ -386,11 +388,5 @@ main {
 @media (min-width: 768px) {
   main {
     display: flex;
-  }
-  section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 }
