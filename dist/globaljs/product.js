@@ -23,17 +23,17 @@ class Glass {
     this.feature = feature;
   }
 }
-const listProducts = [
+const listOfProduct = [
   new Glass(
     'Fendi',
-    'Lorem Glass',
+    'Sale Glass',
     'Dummy Info',
     ['XL', 'Xs'],
     300,
-    false,
+    true,
     0,
     4,
-    'rcmd',
+    'Recommend',
     1
   ),
   new Glass(
@@ -45,7 +45,7 @@ const listProducts = [
     false,
     0,
     4,
-    'rcmd',
+    'Recommend',
     2
   ),
   new Glass(
@@ -57,7 +57,7 @@ const listProducts = [
     false,
     0,
     4,
-    'rcmd',
+    'Recommend',
     3
   ),
   new Glass(
@@ -69,7 +69,7 @@ const listProducts = [
     true,
     250,
     3,
-    'rcmd',
+    'Recommend',
     4
   ),
   new Glass(
@@ -81,7 +81,7 @@ const listProducts = [
     true,
     250,
     3,
-    'rcmd',
+    'Recommend',
     5
   ),
   new Glass(
@@ -93,7 +93,7 @@ const listProducts = [
     true,
     250,
     3,
-    'rcmd',
+    'Recommend',
     6
   ),
   new Glass(
@@ -105,7 +105,7 @@ const listProducts = [
     true,
     250,
     3,
-    'rcmd',
+    'Recommend',
     7
   ),
   new Glass(
@@ -117,13 +117,26 @@ const listProducts = [
     true,
     250,
     3,
-    'rcmd',
+    'Recommend',
     8
   ),
+  new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info dhasdasjgdas',
+    ['L', 'MD', 'SM'],
+    300,
+    true,
+    250,
+    3,
+    'New Arrival',
+    9
+  ),
 ];
-// feature : rcmd new men women
+// feature : Recommend new men women
 class ListGlass {
   constructor(listOfGlass = []) {
+    listOfGlass = [...listOfGlass, ...listOfProduct];
     const storaged = window.localStorage.getItem('listProducts')
       ? JSON.parse(window.localStorage.getItem('listProducts'))
       : [];
@@ -150,8 +163,11 @@ class ListGlass {
     });
     return availableBrand;
   }
-  groupByFeature() {
-    return list.filter((glass) => glass.feature === feature);
+  static groupByFeature(feature) {
+    console.log(feature);
+    return this.getListProduct().filter((glass) => {
+      return glass.feature.toLowerCase() == feature.toLowerCase();
+    });
   }
 
   // filter section
@@ -189,7 +205,6 @@ class ListGlass {
   }
 }
 
-const listGlass = new ListGlass(listProducts);
 class PayGlass extends Glass {
   constructor({
     brand,
