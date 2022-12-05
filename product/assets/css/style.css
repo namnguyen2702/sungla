@@ -29,11 +29,15 @@
 
 .Img_modal{
   grid-area: b;
+  width: 100%;
 }
 #ImgProd {
   padding-top: 2rem;
   cursor: pointer;
   transition: 0.3s;
+}
+.Img_modal>img{
+  width: 100%;
 }
 
 #ImgProd:hover {opacity: 0.7;}
@@ -470,6 +474,7 @@ h1 {
   .container {
     display: grid;
     grid-template-areas:
+      'e'
       'b'
       'a'
       'c'
@@ -479,9 +484,15 @@ h1 {
     gap: 1rem;
     padding: 1rem;
   }
+  .heading{
+    margin: 0;
+  }
+  #ImgProd {
+    padding-top: 0rem;
+  }
 
   .tx {
-    grid-area: b;
+    grid-area: e;
   }
   .size{
     display: none;
