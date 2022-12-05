@@ -1,3 +1,5 @@
+const productList = new ListGlass();
+const cart = new Cart();
 let paramString = window.location.href.split('?')[1];
 const queryString = new URLSearchParams(paramString);
 const productId = Number(queryString.get('id'));
@@ -20,7 +22,6 @@ addCartBtn.addEventListener('click', (e) => {
     sizeSelected: 'XL',
     buyAmount: '4',
   });
-  const cart = new Cart();
 
   console.log('đã thêm sản phảm vào giỏ hàng');
   cart.addProduct(productSelected);
@@ -28,3 +29,7 @@ addCartBtn.addEventListener('click', (e) => {
   console.log(Cart.getCartProduct());
   toastIt('Success Adding to Cart', 2500, { fontSize: '18px' });
 });
+
+// render list product
+const productContainer = document.getElementById('feature');
+productContainer.appendChild(renderProduct(detailsProduct));
