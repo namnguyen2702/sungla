@@ -258,9 +258,18 @@ class Cart {
     window.localStorage.setItem('cart', JSON.stringify(this.list));
   }
 
+  updateBuyAmount(id, amount) {
+    this.list.forEach((el) => {
+      if (id == el.id) {
+        el.buyAmount = amount;
+      }
+    });
+    this.saveLocal();
+  }
+
   deleteProduct(productId) {
-    this.list = this.list.filter((product) => product.id !== productId);
-    saveLocal();
+    this.list = this.list.filter((product) => product.id != productId);
+    this.saveLocal();
   }
   afterPayment() {
     window.localStorage.removeItem('cart');

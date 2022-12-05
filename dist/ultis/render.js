@@ -64,3 +64,41 @@ const renderProduct = (product) => {
   });
   return product_card;
 };
+
+const renderCartProduct = (product) => {
+  const basket_product = document.createElement('div');
+  basket_product.classList.add('basket-product');
+  const htmlCart = `
+  <div class="item">
+    <div class="product-image">
+      <img
+        src="/dist/img/725125382830__STD__shad__fr.png"
+        alt="Placholder Image 2"
+        class="product-frame"
+      />
+    </div>
+    <div class="product-details ">
+      <h1 class="fs-xl">
+       ${product.name}
+      </h1>
+      <p><strong>Size ${product.sizeSelected}</strong></p>
+      <p>Product Code - ${product.id}</p>
+    </div>
+  </div>
+  <div class="price fs-md">${
+    product.isSale ? product.salePrice : product.price
+  }</div>
+  <div class="quantity">
+    <input type="number" value="${product.buyAmount}" min="1" max="${
+    product.amount
+  }" class="quantity-field" data-productid="${product.id}" />
+  </div>
+  <div class="subtotal fs-md">${
+    product.buyAmount * (product.isSale ? product.salePrice : product.price)
+  }</div>
+  <div class="remove">
+    <button value="${product.id}">Remove</button>
+  </div>`;
+  basket_product.innerHTML = htmlCart;
+  return basket_product;
+};

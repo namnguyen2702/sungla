@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../dist/css/global.css" />
+    <link rel="stylesheet" href="./asset/css/shopping.css" />
+    <link rel="stylesheet" href="../../dist/layout/header/asset/css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="../../dist/layout/footer/assets/css/footer.css"
+    />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="nav-bar">
+        <div class="nav-bar__toggleButton">
+          <i class="nav-bar__logo ti ti-menu-2"></i>
+        </div>
+        <div class="nav-bar__icon center">SungLa</div>
+        <div class="nav-bar__menu">
+          <ul role="list" class="nav-bar__items">
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Home</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Shop</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Blog</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Sale</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Contact us</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <input type="text" name="" id="" />
+              <button>Find</button>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-bar__menu_feature">
+          <div class="nav-bar__menu_feature--favourites">
+            <i class="ti ti-heart"></i>
+          </div>
+          <div class="nav-bar__menu_feature--account">
+            <i class="ti ti-shopping-cart"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-bar--block"></div>
+    </div>
+    <div class="cart-section">
+      <main>
+        <div class="basket">
+          <div class="basket-module">
+            <label for="promo-code">Enter a promotional code</label>
+            <input
+              id="promo-code"
+              type="text"
+              name="promo-code"
+              maxlength="5"
+              class="promo-code-field"
+            />
+            <button class="promo-code-cta">Apply</button>
+          </div>
+          <div class="basket-labels" id="cart-products-table">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Price</li>
+              <li class="quantity">Quantity</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-total-items">
+              <span class="total-items"></span> Items in your Bag
+            </div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">
+                130.00
+              </div>
+              <div class="summary-promo hide">
+                <div class="promo-title">Promotion</div>
+                <div class="promo-value final-value" id="basket-promo"></div>
+              </div>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">
+                130.00
+              </div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta">Go to Secure Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <section>
+      <div class="footer">
+        <div class="footer-icon">
+          <div class="center fs-3xl">SungLa</div>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion">
+            <div class="--fs-sm">Features</div>
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <a href="/shop?features=men" class="--fs-s">Men</a>
+              <a href="/shop?features=women" class="--fs-s">Women</a>
+              <a href="/shop?features=new_arrivals" class="--fs-s"
+                >New arrivals</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion">
+            <div class="--fs-sm">Menu</div>
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <a href="/shop?features=men" class="--fs-s">About us</a>
+              <a href="/shop?features=women" class="--fs-s">My cart</a>
+              <a href="/shop?features=new_arrivals" class="--fs-s">Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion">
+            <div class="--fs-sm">Follow us</div>
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <a href="/shop?features=men" class="--fs-s">FaceBook</a>
+              <a href="/shop?features=women" class="--fs-s">Twitter</a>
+              <a href="/shop?features=new_arrivals" class="--fs-s">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="make-by fs-md">Program by Ninh Duc Tung An</div>
+    </section>
+    <script src="../../dist/globaljs/product.js"></script>
+    <script src="../../dist/ultis/render.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script src="../../dist/layout/footer/assets/js/footer.js"></script>
+  </body>
+</html>
