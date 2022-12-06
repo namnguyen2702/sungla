@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +10,69 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
   <link rel="stylesheet" href="../dist/css/global.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
 </head>
+
 <body>
-  <div class="main">
+  <div id="header">
+    <nav class="nav-bar">
+      <div class="nav-bar__toggleButton">
+        <i class="nav-bar__logo ti ti-menu-2"></i>
+      </div>
+      <div class="nav-bar__icon center">SungLa</div>
+      <div class="nav-bar__menu">
+        <ul role="list" class="nav-bar__items">
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Home</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Shop</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Blog</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Sale</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Contact us</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <input type="text" name="" id="" />
+            <button>Find</button>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-bar__menu_feature">
+        <div class="nav-bar__menu_feature--favourites">
+          <i class="ti ti-heart"></i>
+        </div>
+        <div class="nav-bar__menu_feature--account">
+          <i class="ti ti-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-bar--block"></div>
+  </div>
+  <div class="catalog_container">
+    <div class="banner stacked">
+      <div class="banner__content">
+        <div class="banner__content_img">
+          <img src="./assets/imgs/banner2.jpg" alt="" />
+        </div>
+        <div class="banner__content_text fs-3xl">
+          <span>SHOPING WITHOUT LIMITS.</span>
+          <br>
+          We will deliver your purchase anywhere!
+        </div>
+        <a class="banner__content_button fs-lg" href="">Shop Now</a>
+      </div>
+      <div class="banner__img">
+        <img src="./assets/imgs/i2.jpg" alt="" />
+      </div>
+    </div>
     <div class="row">
       <ul class="breadcrumb class fs-sm">
         <li><a href="#">Home</a></li>
@@ -24,93 +84,312 @@
       <div class="sidebar">
         <div class="sidebar-content">
           <div class="Text-Accordion">
-            <button class="accordion fs-xl">Brand</button>
-            <div class="panel">
-              <label>
-              <input type="checkbox" >State
-             </label>
-             <br>
-             <label>
-              <input type="checkbox" >Cooper
-             </label>
-             <br>
-             <label>
-              <input type="checkbox" >bardot
-             </label>
-             <br>
-             <label>
-              <input type="checkbox" >alfani
-             </label>
-             <br>
-             <label>
-              <input type="checkbox" >cece
-             </label>
-             <br>
-             <label>
-              <input type="checkbox" >donna ricco
-             </label>
-            </div>
-            <button class="accordion fs-xl">Size(inches)</button>
-            <div class="panel">
-              <select class="custom-select-size fs-sm">
-                <option value="0">45MM</option>
-                <option value="1">46MM</option>
-                <option value="2">47MM</option>
-                <option value="3">48MM</option>
-                <option value="4">49MM</option>
-                <option value="5">50MM</option>
-                <option value="6">51MM</option>
-                <option value="7">52MM</option>
-                <option value="8">53MM</option>
-                <option value="9">54MM</option>
-                <option value="10">55MM</option>
-                <option value="11">56MM</option>
-                <option value="12">57MM</option>
-              </select>
+            <button class="accordion1 fs-xl">Brand</button>
+            <div class="panel1">
+              <div class="grid-checkbox  fs-md">
+                <label>
+                  <input type="checkbox" name="State"> State
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Cooper"> Cooper
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Bardot"> Bardot
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Alfani"> Alfani
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Cece"> Cece
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Donna ricco"> Donna ricco
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Ray-ban"> Ray-ban
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Gentle Monster"> Gentle Monster
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Oakley"> Oakley
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Oliver Peoples"> Oliver Peoples
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Persol"> Persol
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Zanzan"> Zanzans
+                </label>
               </div>
+            </div>
+            <button class="accordion1 fs-xl">Size</button>
+            <div class="panel1">
+              <div class="size fs-sm">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+              </div>
+            </div>
+            <button class="accordion1 fs-xl">Price</button>
+            <div class="panel1">
+              <div class="Price fs-md">
+                <span>70.00 EUR</span>
+                <span>95.00 EUR</span>
+                <span>130.00 EUR</span>
+              </div>
+            </div>
           </div>
-          <div class="infomation">
-            <h2 class="text-inf fs-xl ">About Sunglasses</h2>
-            <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies leo integer malesuada nunc vel. Turpis in eu mi bibendum neque egestas congue quisque. Tincidunt augue interdum velit euismod in pellentesque massa. Purus sit amet volutpat consequat. Pellentesque diam volutpat commodo sed. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Nisl purus in mollis nunc. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Tortor vitae purus faucibus ornare suspendisse. 
-              Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
-          </div>
-      </div>
+        </div>
+        <div class="infomation">
+          <h2 class="text-inf fs-xl ">About Sunglasses</h2>
+          <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ultricies leo integer malesuada nunc vel. Turpis in eu mi bibendum neque
+            egestas congue quisque. Tincidunt augue interdum velit euismod in pellentesque massa. Purus sit amet
+            volutpat consequat. Pellentesque diam volutpat commodo sed. Mattis vulputate enim nulla aliquet porttitor
+            lacus luctus accumsan. Nisl purus in mollis nunc. Nullam eget felis eget nunc lobortis mattis aliquam
+            faucibus. Tortor vitae purus faucibus ornare suspendisse.
+            Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
+        </div>
       </div>
       <div class="content_item">
-        <div class="grid-item">
-          <div class="item1">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+        <div class="gridProduct">
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                133,00 EUR
+              </div>
+            </div>
           </div>
-          <div class="item2">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
           </div>
-          <div class="item3">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
           </div>
-          <div class="item4">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
           </div>
-          <div class="item5">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
           </div>
-          <div class="item6">
-            <img src="./assets/imgs/prod1.jpg" alt="">
-            <p class="text-inf fs-md">Givenchy GV40042U 02C Goggles</p>
-            <p class="price fs-sm">120,00 EUR</p>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
           </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+          <div class="gridProduct__card">
+            <img src="./assets/imgs/prod1.jpg" alt="" class="gridProduct__card_img" />
+            <div class="gridProduct__card_content">
+              <div class="gridProduct__card_content--type fs-s fw-primary text-gray-4">
+                TOP SUNGLASS
+              </div>
+              <div class="gridProduct__card_content--title fs-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="gridProduct__card_content--price fs-lg fw-primary">
+                139,00 EUR
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <!-- Footer -->
+  <section>
+    <div class="footer">
+      <div class="footer-icon">
+        <div class="center fs-3xl">SungLa</div>
+      </div>
+      <div class="accordion-container">
+        <button class="accordion">
+          <div class="--fs-sm">Features</div>
+          <i class="ti ti-plus"></i>
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            <a href="/shop?features=men" class="--fs-s">Men</a>
+            <a href="/shop?features=women" class="--fs-s">Women</a>
+            <a href="/shop?features=new_arrivals" class="--fs-s">New arrivals</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-container">
+        <button class="accordion">
+          <div class="--fs-sm">Menu</div>
+          <i class="ti ti-plus"></i>
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            <a href="/shop?features=men" class="--fs-s">About us</a>
+            <a href="/shop?features=women" class="--fs-s">My cart</a>
+            <a href="/shop?features=new_arrivals" class="--fs-s">Login</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-container">
+        <button class="accordion">
+          <div class="--fs-sm">Follow us</div>
+          <i class="ti ti-plus"></i>
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            <a href="/shop?features=men" class="--fs-s">FaceBook</a>
+            <a href="/shop?features=women" class="--fs-s">Twitter</a>
+            <a href="/shop?features=new_arrivals" class="--fs-s">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="make-by fs-md">Program by Ninh Duc Tung An</div>
+  </section>
 </body>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/footer.js"></script>
+<script src="./assets/js/nav.js"></script>
+
 </html>

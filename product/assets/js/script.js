@@ -1,14 +1,14 @@
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion1");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
+    this.classList.toggle("active1");
+    var panel1 = this.nextElementSibling;
+    if (panel1.style.maxHeight) {
+      panel1.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel1.style.maxHeight = panel1.scrollHeight + "px";
     }
   });
 }
@@ -36,11 +36,10 @@ qtyChangeBtns.forEach((btn)=>{
     })
 })
 /*  */
-// Get the modal
+
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
+var img = document.getElementById("ImgProd");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -49,10 +48,8 @@ img.onclick = function(){
   captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
