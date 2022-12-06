@@ -12,3 +12,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+/*  */
+var sliderPr = document.getElementById("myRange");
+var output = document.getElementById("numberPrice");
+output.innerHTML = sliderPr.value;
+
+sliderPr.oninput = function() {
+  output.innerHTML = this.value;
+}
