@@ -99,4 +99,8 @@
         padding-inline: 1em;
     }
 }
-
+.nav-bar__menu_feature  a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
