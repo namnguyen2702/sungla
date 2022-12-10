@@ -25,112 +25,368 @@ class Glass {
 }
 const listOfProduct = [
   new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature Men',
+    1
+  ),
+new Glass(
+    'Prada',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature Arrival',
+    2
+  ),
+new Glass(
+    'Prada',
+    'Sale Glass',
+    'Dummy Info',
+    ['MD','L'],
+    200,
+    true,
+    150,
+    4,
+    'Feature New',
+    3
+  ),
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    3,
+    'Feature Women',
+    4
+  ),
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    false,
+    0,
+    5,
+    'Feature Women',
+    5
+  ),
+new Glass(
+    'Prada',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','L'],
+    300,
+    false,
+    0,
+    4,
+    'Feature New',
+    6
+  ),
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature Women',
+    7
+  ),
+
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature New',
+    8
+  ),
+new Glass(
+    'Fendi',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature Women',
+    9
+  ),
+new Glass(
+    'Fendi',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    2,
+    'Feature Arrivalmend',
+    10
+  ),
+new Glass(
+    'Fendi',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature New',
+    11
+  ),
+new Glass(
+    'Prada',
+    'Lorem Glass',
+    'Dummy Info',
+    ['SM'],
+    300,
+    false,
+    0,
+    3,
+    'Feature Women',
+    12
+  ),
+new Glass(
+    'Gucci',
+    'sale Glass',
+    'Dummy Info',
+    ['L','SM'],
+    300,
+    true,
+    200,
+    2,
+    'Feature Arrivalmend',
+    13
+  ),
+
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature New',
+    14
+  ),
+new Glass(
+    'Fendi',
+    'Lorem Glass',
+    'Dummy Info',
+    ['SM'],
+    300,
+    false,
+    0,
+    4,
+    'Feature Women',
+    15
+  ),
+new Glass(
     'Fendi',
     'Sale Glass',
     'Dummy Info',
-    ['XL', 'Xs'],
+    ['SM'],
     300,
     true,
-    0,
+    200,
     4,
-    'Recommend',
-    1
+    'Feature Arrivalmend',
+    16
   ),
-  new Glass(
+new Glass(
     'Gucci',
-    'Lorem 2 Glass',
+    'Lorem Glass',
     'Dummy Info',
-    ['XL', 'Xs'],
+    ['MD','SM'],
     300,
     false,
     0,
     4,
-    'Recommend',
-    2
+    'Feature Women',
+    17
   ),
-  new Glass(
+new Glass(
+    'Fendi',
+    'Sale Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    600,
+    true,
+    500,
+    2,
+    'Feature Men',
+    18
+  ),
+new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info',
+    ['SM'],
+    300,
+    false,
+    0,
+    1,
+    'Feature Women',
+    19
+  ),
+
+new Glass(
+    'Gucci',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD'],
+    300,
+    false,
+    0,
+    2,
+    'Feature Men',
+    20
+  ),
+new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    2,
+    'Feature Women',
+    21
+  ),
+new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
-    ['Xs'],
+    ['L','SM'],
+    300,
+    false,
+    0,
+    5,
+    'Feature Men',
+    22
+  ),
+new Glass(
+    'Prada',
+    'Lorem Glass',
+    'Dummy Info',
+    ['MD','SM'],
+    300,
+    false,
+    0,
+    2,
+    'Feature Women',
+    23
+  ),
+new Glass(
+    'Versace',
+    'Lorem Glass',
+    'Dummy Info',
+    ['L','SM'],
     300,
     false,
     0,
     4,
-    'Recommend',
-    3
+    'Feature Arrivalmend',
+    24
   ),
-  new Glass(
-    'Versace',
-    'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
-    300,
+new Glass(
+    'Prada',
+    'Sale Glass',
+    'Dummy Info',
+    ['MD','L','SM'],
+    400,
     true,
     250,
-    3,
-    'Recommend',
-    4
+    4,
+    'Feature Men',
+    25
   ),
-  new Glass(
-    'Versace',
+
+new Glass(
+    'Gucci',
     'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
+    'Dummy Info',
+    ['MD','L','SM'],
     300,
-    true,
-    250,
+    false,
+    0,
     3,
-    'Recommend',
-    5
+    'Feature New',
+    26
   ),
-  new Glass(
-    'Versace',
+new Glass(
+    'Chanel',
     'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
+    'Dummy Info',
+    ['L','SM'],
     300,
-    true,
-    250,
+    false,
+    0,
     3,
-    'Recommend',
-    6
+    'Feature Women',
+    27
   ),
-  new Glass(
-    'Versace',
+new Glass(
+    'Gucci',
     'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
+    'Dummy Info',
+    ['MD','SM'],
     300,
-    true,
-    250,
-    3,
-    'Recommend',
-    7
+    false,
+    0,
+    4,
+    'Feature Men',
+    28
   ),
-  new Glass(
-    'Versace',
+new Glass(
+    'Chanel',
     'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
+    'Dummy Info',
+    ['MD','L'],
     300,
-    true,
-    250,
-    3,
-    'Recommend',
-    8
+    false,
+    0,
+    4,
+    'Feature Women',
+    29
   ),
-  new Glass(
-    'Versace',
-    'Lorem Glass',
-    'Dummy Info dhasdasjgdas',
-    ['L', 'MD', 'SM'],
+new Glass(
+    'Gucci',
+    'Gucci Sale Glass',
+    'Info Glass',
+    ['MD','SM'],
     300,
-    true,
-    250,
+    false,
+    0,
     3,
-    'New Arrival',
-    9
+    'Feature Men',
+    30
   ),
 ];
 // feature : Recommend new men women
@@ -282,3 +538,28 @@ class Cart {
       : [];
   }
 }
+
+const sanPhams =  ListGlass.getListProduct();
+console.log('San pham: ');
+console.log(sanPhams);
+console.log('SIZE');
+let productSize = sanPhams;
+
+productSize = ListGlass.groupBySize(sanPhams, 'MD');
+
+
+console.log(productSize);
+
+const searchByName = (name) => {
+  return ListGlass.getListProduct().filter(el => {
+    return el.name.match(name);
+  });
+}
+
+const searchBySize = (size)=>{
+  return ListGlass.getListProduct().filter(function (sz) {
+    return sz.id.match(size);
+  });
+}
+console.log(searchBySize(1));
+console.log(searchBySize('MD'));
