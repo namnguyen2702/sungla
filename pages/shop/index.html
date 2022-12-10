@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product-page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
+  <link rel="stylesheet" href="../../dist/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="../../dist/layout/header/asset/css/nav.css">
+  <link rel="stylesheet" href="../../dist/layout/footer/assets/css/footer.css">
+  <link rel="stylesheet" href="../../dist/css/toast.css" />
+</head>
+
+<body>
+  <div id="header">
+    <nav class="nav-bar">
+      <div class="nav-bar__toggleButton">
+        <i class="nav-bar__logo ti ti-menu-2"></i>
+      </div>
+      <div class="nav-bar__icon center">SungLa</div>
+      <div class="nav-bar__menu">
+        <ul role="list" class="nav-bar__items">
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Home</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Shop</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Blog</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Sale</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <a href="#" class="fw-primary">Contact us</a>
+          </li>
+          <li class="nav-bar__items-item">
+            <input type="text" name="" id="" />
+            <button>Find</button>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-bar__menu_feature">
+        <div class="nav-bar__menu_feature--favourites">
+          <i class="ti ti-heart"></i>
+        </div>
+        <div class="nav-bar__menu_feature--account">
+          <i class="ti ti-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-bar--block"></div>
+  </div>
+  <div class="catalog_container">
+    <div class="banner stacked">
+      <div class="banner__content">
+        <div class="banner__content_img">
+          <img src="./assets/imgs/banner2.jpg" alt="" />
+        </div>
+        <div class="banner__content_text fs-3xl">
+          <span>SHOPING WITHOUT LIMITS.</span>
+          <br>
+          We will deliver your purchase anywhere!
+        </div>
+        <a class="banner__content_button fs-lg" href="">Shop Now</a>
+      </div>
+      <div class="banner__img">
+        <img src="./assets/imgs/i2.jpg" alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <ul class="breadcrumb class fs-sm">
+        <li><a href="#">Home</a></li>
+        <li><a href="#"> Shop </a></li>
+        <li>Best choose</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <div class="Text-Accordion">
+            <button class="accordion1 fs-xl">Brand</button>
+            <div class="panel1">
+              <div class="grid-checkbox  fs-md">
+                <label>
+                  <input type="checkbox" name="State"> State
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Cooper"> Cooper
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Bardot"> Bardot
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Alfani"> Alfani
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Cece"> Cece
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Donna ricco"> Donna ricco
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Ray-ban"> Ray-ban
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Gentle Monster"> Gentle
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Oakley"> Oakley
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Oliver Peoples"> Oliver
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Persol"> Persol
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="Zanzan"> Zanzans
+                </label>
+              </div>
+            </div>
+            <button class="accordion1 fs-xl">Size</button>
+            <div class="panel1">
+              <div class="size fs-sm">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+              </div>
+            </div>
+            <button class="accordion1 fs-xl">Price</button>
+            <div class="panel1">
+              <div class="slide-Price">
+                <input type="range" min="20" max="200" value="110" class="sliderPr" id="myRange">
+                <p class="numberPrice --fs-md">PRICE: <span id="numberPrice""></span> EUR < </p>
+              </div>
+              </div>
+            </div>
+            <button class=" accordion1 fs-xl">Features</button>
+                    <div class="panel1">
+                      <div class="panel1-content">
+                        <a href="/shop?features=men" class="--fs-lg --fw-primary">Men</a>
+                        <a href="/shop?features=women" class="--fs-lg --fw-primary">Women</a>
+                        <a href="/shop?features=sale" class="--fs-lg --fw-primary">Sale</a>
+                        <a href="/shop?features=new_arrivals" class="--fs-lg --fw-primary">New Arrivals</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="infomation">
+                <h2 class="text-inf fs-xl ">About Sunglasses</h2>
+                <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt
+                  ut labore et dolore magna aliqua. Ultricies leo integer malesuada nunc vel. Turpis in eu mi bibendum
+                  neque
+                  egestas congue quisque. Tincidunt augue interdum velit euismod in pellentesque massa. Purus sit amet
+                  volutpat consequat. Pellentesque diam volutpat commodo sed. Mattis vulputate enim nulla aliquet
+                  porttitor
+                  lacus luctus accumsan. Nisl purus in mollis nunc. Nullam eget felis eget nunc lobortis mattis aliquam
+                  faucibus. Tortor vitae purus faucibus ornare suspendisse.
+                  Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
+              </div>
+            </div>
+            <div class="content_item">
+              <div class="gridProduct" id="load-data">
+              </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section>
+          <div class="footer">
+            <div class="footer-icon">
+              <div class="center fs-3xl">SungLa</div>
+            </div>
+            <div class="accordion-container">
+              <button class="accordion">
+                <div class="--fs-sm">Features</div>
+                <i class="ti ti-plus"></i>
+              </button>
+              <div class="panel">
+                <div class="panel-content">
+                  <a href="/shop?features=men" class="--fs-s">Men</a>
+                  <a href="/shop?features=women" class="--fs-s">Women</a>
+                  <a href="/shop?features=new_arrivals" class="--fs-s">New arrivals</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <button class="accordion">
+                <div class="--fs-sm">Menu</div>
+                <i class="ti ti-plus"></i>
+              </button>
+              <div class="panel">
+                <div class="panel-content">
+                  <a href="/shop?features=men" class="--fs-s">About us</a>
+                  <a href="/shop?features=women" class="--fs-s">My cart</a>
+                  <a href="/shop?features=new_arrivals" class="--fs-s">Login</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <button class="accordion">
+                <div class="--fs-sm">Follow us</div>
+                <i class="ti ti-plus"></i>
+              </button>
+              <div class="panel">
+                <div class="panel-content">
+                  <a href="/shop?features=men" class="--fs-s">FaceBook</a>
+                  <a href="/shop?features=women" class="--fs-s">Twitter</a>
+                  <a href="/shop?features=new_arrivals" class="--fs-s">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="make-by fs-md">Program by Ninh Duc Tung An</div>
+        </section>
+</body>
+<script src="../../dist/globaljs/product.js"></script>
+<script src="../../dist/ultis/render.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="../../dist/layout/footer/assets/js/footer.js"></script>
+<script src="../../dist/layout/header/asset/js/nav.js"></script>
+
+</html>

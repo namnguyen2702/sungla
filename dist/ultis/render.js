@@ -60,7 +60,7 @@ const renderProduct = (product) => {
   product_card.appendChild(productContentContainer);
 
   product_card.addEventListener('click', () => {
-    window.location.href = '/details/product.html?id=' + product.id;
+    window.location.href = '/pages/product/index.html?id=' + product.id;
   });
   return product_card;
 };
@@ -101,4 +101,56 @@ const renderCartProduct = (product) => {
   </div>`;
   basket_product.innerHTML = htmlCart;
   return basket_product;
+};
+
+const renderDetailsProduct = (product) => {
+  const productWrapper = document.getElementById('product-wrapper');
+  const htmlDetailsProduct = `<div class="product-content-right-name ">
+  <p class="fendi fs-sm">${product.brand}</p>
+  <h1 class="heading fs-xl">${product.name}</h1>
+</div>
+<div class="product-content-select">
+  <div class="product-content-right-select-size-text row">
+    <p class="select-size fs-sm">SELECT SIZE</p>
+    <p class="Size-quide fs-sm"><a href="">Size quide</a></p>
+  </div>
+  <div class="product-content-right-select-size">
+    <select class="custom-select-size fs-sm" id="size-select">
+    </select>
+  </div>
+  <div class="row">
+    <div class="product-content-right-price">
+      <p class="price-total fs-sm">PRICE TOTAL</p>
+      <p style="font-weight: 900 ; color:${
+        product.isSale ? 'red' : 'black'
+      }" class="price fw-product-price">${
+    product.isSale ? product.salePrice : product.price
+  }$</p>
+    </div>
+  </div>
+</div>
+<div class="product-content-right-button-add-bag row">
+  <button class="btn1 bag fs-sm" id="add-to-cart">ADD TO BAG</button>
+</div>
+<div class="product-content-tx row">
+  <p class="fs-s">Free shipping</p>
+  <p class="fs-s">Product code: RFKK1024</p>
+  <p class="fs-s">TAGS: NEW arrivals, Top sunglasses</p>
+</div>`;
+  productWrapper.innerHTML = htmlDetailsProduct;
+  let selectHtml = '';
+  product.size.forEach((el) => {
+    selectHtml += `<option value=${el}>${el.toUpperCase()}</option>`;
+  });
+  document.getElementById('size-select').innerHTML = selectHtml;
+  document.getElementById('add-to-cart').addEventListener('click', () => {
+    const selectedSize = document.getElementById('size-select');
+    const productSelected = new PayGlass({
+      ...product,
+      sizeSelected: selectedSize.value,
+      buyAmount: '1',
+    });
+    cart.addProduct(productSelected);
+    toastIt('Success Adding to Cart', 2500, { fontSize: '18px' });
+  });
 };

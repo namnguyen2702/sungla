@@ -26,3 +26,21 @@ menu.addEventListener('click', () => {
   }
 });
 
+document.querySelector('.nav-bar__icon').addEventListener('click', () => {
+  window.location.href = '/pages/Home';
+});
+const navbarItems = document.querySelectorAll('.nav-bar__items-item');
+navbarItems[0].addEventListener('click', () => {
+  window.location.href = '/pages/Home';
+});
+navbarItems[1].addEventListener('click', () => {
+  window.location.href = '/pages/shop';
+});
+navbarItems[2].addEventListener('click', () => {
+  window.location.href = '/pages/article';
+});
+document
+  .querySelector('.nav-bar__menu_feature--account')
+  .addEventListener('click', () => {
+    window.location.href = '/pages/Cart/';
+  });

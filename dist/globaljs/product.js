@@ -28,88 +28,88 @@ const listOfProduct = [
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Men',
+    'Men',
     1
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Arrival',
+    'New Arrival',
     2
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Sale Glass',
     'Dummy Info',
-    ['MD','L'],
+    ['MD', 'L'],
     200,
     true,
     150,
     4,
-    'Feature New',
+    'Recommend',
     3
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     3,
-    'Feature Women',
+    'Recommend',
     4
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     5,
-    'Feature Women',
+    'Recommend',
     5
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','L'],
+    ['MD', 'L'],
     300,
     false,
     0,
     4,
-    'Feature New',
+    'Recommend',
     6
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Women',
+    'Women',
     7
   ),
 
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
@@ -118,46 +118,46 @@ new Glass(
     false,
     0,
     4,
-    'Feature New',
+    'New Arrival',
     8
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Women',
+    'New Arrival',
     9
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     2,
-    'Feature Arrivalmend',
+    'New Arrival',
     10
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature New',
+    'New Arrival',
     11
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Lorem Glass',
     'Dummy Info',
@@ -166,35 +166,35 @@ new Glass(
     false,
     0,
     3,
-    'Feature Women',
+    'Women',
     12
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'sale Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     true,
     200,
     2,
-    'Feature Arrivalmend',
+    'New Arrival',
     13
   ),
 
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature New',
+    'Men',
     14
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
@@ -203,10 +203,10 @@ new Glass(
     false,
     0,
     4,
-    'Feature Women',
+    'Women',
     15
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Sale Glass',
     'Dummy Info',
@@ -215,34 +215,34 @@ new Glass(
     true,
     200,
     4,
-    'Feature Arrivalmend',
+    'New Arrival',
     16
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Women',
+    'Recommend',
     17
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Sale Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     600,
     true,
     500,
     2,
-    'Feature Men',
+    'Recommend',
     18
   ),
-new Glass(
+  new Glass(
     'Versace',
     'Lorem Glass',
     'Dummy Info',
@@ -251,11 +251,11 @@ new Glass(
     false,
     0,
     1,
-    'Feature Women',
+    'Women',
     19
   ),
 
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
@@ -264,128 +264,128 @@ new Glass(
     false,
     0,
     2,
-    'Feature Men',
+    'Men',
     20
   ),
-new Glass(
+  new Glass(
     'Versace',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     2,
-    'Feature Women',
+    'Recommend',
     21
   ),
-new Glass(
+  new Glass(
     'Fendi',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     5,
-    'Feature Men',
+    'Men',
     22
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     2,
-    'Feature Women',
+    'Women',
     23
   ),
-new Glass(
+  new Glass(
     'Versace',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Arrivalmend',
+    'Recommend',
     24
   ),
-new Glass(
+  new Glass(
     'Prada',
     'Sale Glass',
     'Dummy Info',
-    ['MD','L','SM'],
+    ['MD', 'L', 'SM'],
     400,
     true,
     250,
     4,
-    'Feature Men',
+    'Men',
     25
   ),
 
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','L','SM'],
+    ['MD', 'L', 'SM'],
     300,
     false,
     0,
     3,
-    'Feature New',
+    'Feature',
     26
   ),
-new Glass(
+  new Glass(
     'Chanel',
     'Lorem Glass',
     'Dummy Info',
-    ['L','SM'],
+    ['L', 'SM'],
     300,
     false,
     0,
     3,
-    'Feature Women',
+    'Women',
     27
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     4,
-    'Feature Men',
+    'Men',
     28
   ),
-new Glass(
+  new Glass(
     'Chanel',
     'Lorem Glass',
     'Dummy Info',
-    ['MD','L'],
+    ['MD', 'L'],
     300,
     false,
     0,
     4,
-    'Feature Women',
+    'Women',
     29
   ),
-new Glass(
+  new Glass(
     'Gucci',
     'Gucci Sale Glass',
     'Info Glass',
-    ['MD','SM'],
+    ['MD', 'SM'],
     300,
     false,
     0,
     3,
-    'Feature Men',
+    'Men',
     30
   ),
 ];
@@ -459,7 +459,7 @@ class ListGlass {
     );
   }
 }
-
+const defaultList = new ListGlass(listOfProduct);
 class PayGlass extends Glass {
   constructor({
     brand,
@@ -539,27 +539,22 @@ class Cart {
   }
 }
 
-const sanPhams =  ListGlass.getListProduct();
-console.log('San pham: ');
-console.log(sanPhams);
-console.log('SIZE');
-let productSize = sanPhams;
+// const sanPhams =  ListGlass.getListProduct();
+// console.log('San pham: ');
+// console.log(sanPhams);
+// console.log('SIZE');
+// let productSize = sanPhams;
 
-productSize = ListGlass.groupBySize(sanPhams, 'MD');
-
-
-console.log(productSize);
+// productSize = ListGlass.groupBySize(sanPhams, 'MD');
 
 const searchByName = (name) => {
-  return ListGlass.getListProduct().filter(el => {
+  return ListGlass.getListProduct().filter((el) => {
     return el.name.match(name);
   });
-}
+};
 
-const searchBySize = (size)=>{
+const searchBySize = (size) => {
   return ListGlass.getListProduct().filter(function (sz) {
     return sz.id.match(size);
   });
-}
-console.log(searchBySize(1));
-console.log(searchBySize('MD'));
+};

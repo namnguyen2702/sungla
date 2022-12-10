@@ -6,7 +6,6 @@
     padding-bottom: 1em ;
     background-color: black;
     position: fixed;
-    z-index: 88;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -19,7 +18,7 @@
     width: 100%;
     top: 100%;
     transition: all ease-in-out 500ms;
-    z-index: 100;
+    z-index: 5;
 }
 .nav-bar__items{
     width: 100%;
@@ -32,8 +31,11 @@
     width: 100%;
     height: 100%;
     left: -100%;
-    z-index: 100;
+    z-index: 8;
     transition: all ease-in-out;
+}
+.nav-bar__menu .nav-bar__items li:hover a{
+    background-color: burlywood;
 }
 .nav-bar__logo{ 
     color: white;
@@ -67,7 +69,7 @@
 }
 @media (min-width: 768px){
     .nav-bar{
-        z-index: 100;
+        z-index: 8;
     }
     .nav-bar__toggleButton{
         display: none;
@@ -99,10 +101,4 @@
         padding-inline: 1em;
     }
 }
-.nav-bar__menu_feature  a{
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-
 

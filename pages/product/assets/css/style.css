@@ -674,3 +674,7 @@ section {
     background-color: black !important;
   }
 }
+
+#size-select{
+  display: block !important;
+}

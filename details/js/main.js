@@ -22,7 +22,6 @@ addCartBtn.addEventListener('click', (e) => {
     sizeSelected: 'XL',
     buyAmount: '4',
   });
-
   console.log('đã thêm sản phảm vào giỏ hàng');
   cart.addProduct(productSelected);
   console.log('Giỏi hàng hiện tại có');
