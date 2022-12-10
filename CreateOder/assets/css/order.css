@@ -44,6 +44,7 @@ ul.breadcrumb li a:hover {
 .main__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
 }
 
 .check__order {
@@ -61,14 +62,10 @@ ul.breadcrumb li a:hover {
     outline: none;
 }
 
-/* #order__header:hover {
-    background-color: #828282;
-} */
-
 .btn-view__Detail {
     display: flex;
     justify-content: space-between;
-    margin: 0px 10px;
+    margin: 10px;
 }
 
 .total-order {
@@ -94,11 +91,14 @@ ul.breadcrumb li a:hover {
 }
 
 .Order__infor {
-    padding: 30px;
+    padding: 40px;
     background-color: #F0F2F2;
     border: #C4C4C4 2px solid;
 }
 
+.infor-flex {
+    margin: 10px 0px;
+}
 #close {
     float: right;
     font-size: 45px;
@@ -116,10 +116,12 @@ ul.breadcrumb li a:hover {
 .titel-order {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .content--bold{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .font-bold {
     font-size: 20px;
@@ -208,7 +210,7 @@ ul.breadcrumb li a:hover {
 
 .collapsible {
     cursor: pointer;
-    padding: 18px;
+    padding: 5px;
     width: 100%;
     border: none;
     text-align: left;
@@ -263,6 +265,9 @@ ul.breadcrumb li a:hover {
     padding-left: unset;
 }
 
+.check__order--infor {
+    margin: 30px 0px;
+}
 @media screen and (max-width: 768px) {
     .main {
         padding: unset;
@@ -293,7 +298,7 @@ ul.breadcrumb li a:hover {
         margin: 0px 5%;
         padding: 0;
         position: absolute;
-        max-height: 55%;
+        max-height: 80%;
         overflow: auto;
         width: 80%;
         overflow: scroll;
@@ -302,7 +307,11 @@ ul.breadcrumb li a:hover {
         animation-duration: 0.4s
     }
 
+    check__order--infor {
+        margin: 30px 0px;
+    }
     .Order__infor {
+        padding: 10px 30px;
         border: unset;
         background-color: white;
     }
