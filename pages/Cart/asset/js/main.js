@@ -1,6 +1,5 @@
 const cart = new Cart();
 const cartProduct = Cart.getCartProduct();
-console.log(cartProduct);
 cartProduct.forEach((element) => {
   document
     .getElementById('cart-products-table')
@@ -33,10 +32,8 @@ removeButton.forEach((el) => {
   el.addEventListener('click', () => {
     cart.deleteProduct(Number(el.value));
     updateSubTotal();
-    console.log(
-      el.parentElement.parentElement.parentElement.removeChild(
-        el.parentElement.parentElement
-      )
+    el.parentElement.parentElement.parentElement.removeChild(
+      el.parentElement.parentElement
     );
   });
 });

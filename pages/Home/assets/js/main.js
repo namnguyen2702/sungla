@@ -1,5 +1,4 @@
 // test 2
-console.log('Duc an');
 // render product
 const productList = new ListGlass();
 // Some eyes Wear Product

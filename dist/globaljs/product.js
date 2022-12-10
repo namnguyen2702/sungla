@@ -164,7 +164,6 @@ class ListGlass {
     return availableBrand;
   }
   static groupByFeature(feature) {
-    console.log(feature);
     return this.getListProduct().filter((glass) => {
       return glass.feature.toLowerCase() == feature.toLowerCase();
     });
