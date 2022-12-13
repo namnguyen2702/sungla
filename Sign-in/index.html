@@ -8,33 +8,127 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="stylesheet" href="/dist/css/global.css" />
     <link rel="stylesheet" href="./asset/css/content.css">
+    <link rel="stylesheet" href="/dist/layout/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="/dist/layout/header/asset/css/nav.css">
+    <script src="/dist/layout/footer/assets/js/footer.js"></script>
+    <script src="/dist/layout/header/asset/js/nav.js"></script>
+    <script src="./asset/js/form.js"></script>
     <title>Document</title>
   <body>
+    <div id="header">
+      <nav class="nav-bar">
+        <div class="nav-bar__toggleButton">
+          <i class="nav-bar__logo ti ti-menu-2"></i>
+        </div>
+        <div class="nav-bar__icon center">SungLa</div>
+        <div class="nav-bar__menu">
+          <ul role="list" class="nav-bar__items">
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Home</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Shop</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Blog</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Sale</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Contact us</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <input type="text" name="" id="" />
+              <button>Find</button>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-bar__menu_feature">
+          <div class="nav-bar__menu_feature--favourites">
+            <i class="ti ti-heart"></i>
+          </div>
+          <a class="nav-bar__menu_feature--account" href="/pages/Cart/" >
+            <i class="ti ti-shopping-cart"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="nav-bar--block"></div>
+    </div>
     <div id="content">
         <div class="content">
-            <div class="content-header fs-2xl">
-                <p>Sign In</p>
+          <div class="content-header fs-2xl">
+            <p>Sign In</p>
+          </div>
+          <form action="" method="POST" class="form sub-content" id="form-1">
+            <div class="sub-content-header fs-lg">
+              <p>Sign In</p>
             </div>
-            <div class="sub-content">
-              <div class="sub-content-header fs-lg">
-                <p>Sign In</p>
-              </div>
-              <div class="sub-content-info fs-sm part">
-                <p class="item1">Email<em>*</em></p>
-                <input type="text" class="item2">
-              </div>
-              <div class="sub-content-info fs-sm part">
-                <p class="item1">Password <em>*</em></p>
-                <input type="text"  placeholder="   Password" class="item2">
-              </div>
-              <div class="button">
-                <a href="#" class="create fs-sm">Sign In</a>
-                <a href="#" class="Back fs-lg">Back</a>
-              </div>
+            <div class="form-group sub-content-info fs-sm part">
+              <p class="item1 form-label">Email<em>*</em></p>
+              <input id="email" name="email" type="text"  placeholder="   Email" class="item2 form-control">
+              <span class="form-message item3"></span>
             </div>
+            <div class="form-group sub-content-info fs-sm part">
+              <p class="item1 form-label">Password <em>*</em></p>
+              <input id="password_confirmation" name="password_confirmation" placeholder="   Password" type="password" class="item2 form-control">
+              <span class="form-message item3"></span>
+            </div>
+            <div class="button">
+              <button href="#" class="form-submit create fs-sm">Sign In</button>
+              <button href="#" class="form-submit Back fs-lg">Back</button>
+            </div>
+          </form>
         </div>
     </div>
 
-    <script src=""></script>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Mong muốn của chúng ta
+        Validator({
+          form: '#form-1',
+          formGroupSelector: '.form-group',
+          errorSelector: '.form-message',
+          rules: [
+            Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+            Validator.isEmail('#email'),
+            Validator.minLength('#password', 6),
+            Validator.isRequired('#password_confirmation'),
+            Validator.isConfirmed('#password_confirmation', function () {
+              return document.querySelector('#form-1 #password').value;
+            }, 'Password does not match')
+          ],
+          onSubmit: function (data) {
+            // Call API
+            console.log(data);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

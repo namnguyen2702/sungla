@@ -30,6 +30,7 @@
     border-right: none;
     margin-left: 14px;
     margin-right: 14px;
+    margin-bottom: 100px;
 }
 
 .sub-content-info .checkbox {
@@ -40,6 +41,10 @@
 .item2 {
     width: 100%;
     border: 1px solid #c4c4c4;
+}
+
+.item3 {
+    width: 100%;
 }
 
 em {
@@ -101,6 +106,15 @@ em {
     color: #828282;
 }
 
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+
 
 @media (min-width: 768px) {
     .content-path p {
@@ -146,6 +160,11 @@ em {
 
     .item2 {
         grid-area: 1 / 2 / span 1 / span 5;
+        width: 50%;
+    }
+
+    .item3 {
+        grid-area: 2 / 2 / span 1 / span 5;
         width: 50%;
     }
 
