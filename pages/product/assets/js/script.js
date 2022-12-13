@@ -13,7 +13,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
 var modal = document.getElementById('myModal');
 
 var img = document.getElementById('ImgProd');
@@ -30,7 +29,7 @@ var span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
-console.log("an");
+console.log('an');
 const productList = new ListGlass();
 const cart = new Cart();
 let paramString = window.location.href.split('?')[1];
@@ -40,5 +39,11 @@ const detailsProduct = ListGlass.getProduct(Number(queryString.get('id')));
 if (!detailsProduct) {
   window.location.pathname = '/pages/Home';
 }
-renderDetailsProduct(detailsProduct)
-
+renderDetailsProduct(detailsProduct);
+if (ListGlass.getListProduct().length > 6) {
+  for (let i = 0; i < 6; i++) {
+    document
+      .getElementById('also-like')
+      .appendChild(renderProduct(ListGlass.getListProduct()[i]));
+  }
+}

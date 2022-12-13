@@ -86,82 +86,49 @@
           <div class="Text-Accordion">
             <button class="accordion1 fs-xl">Brand</button>
             <div class="panel1">
-              <div class="grid-checkbox  fs-md">
-                <label>
-                  <input type="checkbox" name="State"> State
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Cooper"> Cooper
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Bardot"> Bardot
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Alfani"> Alfani
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Cece"> Cece
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Donna ricco"> Donna ricco
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Ray-ban"> Ray-ban
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Gentle Monster"> Gentle
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Oakley"> Oakley
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Oliver Peoples"> Oliver
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Persol"> Persol
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="Zanzan"> Zanzans
-                </label>
-              </div>
+              <form class="grid-checkbox  fs-md"> 
+                <select name="" id="brand-op">
+                  <option value=null>--Choose Brand--</option>
+                  <option value="Gucci">Gucci</option>
+                  <option value="Channel">Channel</option>
+                  <option value="Prada">Prada</option>
+                  <option value="Versace">Versace</option>
+                  <option value="Fendi">Fendi</option>
+                </select>
+              </form>
             </div>
             <button class="accordion1 fs-xl">Size</button>
             <div class="panel1">
-              <div class="size fs-sm">
-                <span>S</span>
-                <span>M</span>
-                <span>L</span>
+              <div class="">
+                <select name="" id="size-op">
+                  <option value=null>--Choose Size--</option>
+                  <option value="SM">SM</option>
+                  <option value="MD">MD</option>
+                  <option value="L">L</option>
+                </select>
               </div>
             </div>
             <button class="accordion1 fs-xl">Price</button>
             <div class="panel1">
               <div class="slide-Price">
-                <input type="range" min="20" max="200" value="110" class="sliderPr" id="myRange">
+                <input type="range" min="20" max="1000" value="" class="sliderPr" id="myRange">
                 <p class="numberPrice --fs-md">PRICE: <span id="numberPrice""></span> EUR < </p>
               </div>
               </div>
             </div>
             <button class=" accordion1 fs-xl">Features</button>
                     <div class="panel1">
-                      <div class="panel1-content">
-                        <a href="/shop?features=men" class="--fs-lg --fw-primary">Men</a>
-                        <a href="/shop?features=women" class="--fs-lg --fw-primary">Women</a>
-                        <a href="/shop?features=sale" class="--fs-lg --fw-primary">Sale</a>
-                        <a href="/shop?features=new_arrivals" class="--fs-lg --fw-primary">New Arrivals</a>
-                      </div>
+                      <select class="panel1-content" id="feature-opt">
+                        <option value=null>--Choose Features--</option>
+                        <option class="--fs-lg --fw-primary" value="Men">Men</option>
+                        <option  class="--fs-lg --fw-primary" value="Women">Women</option>
+                        <option  class="--fs-lg --fw-primary" 
+                        value="Sale">Sale</option>
+                        <option class="--fs-lg --fw-primary" value="New Arrivals">New Arrivals</option>
+                      </select>
                     </div>
               </div>
+              <button id="submit-sort" style="margin-top:3px ;">Submit Sort</button>
               <div class="infomation">
                 <h2 class="text-inf fs-xl ">About Sunglasses</h2>
                 <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -176,7 +143,9 @@
                   Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
               </div>
             </div>
-            <div class="content_item">
+            <div class="content_item" style="
+            min-height: 100vh;
+        ">
               <div class="gridProduct" id="load-data">
               </div>
             </div>
@@ -233,6 +202,7 @@
 </body>
 <script src="../../dist/globaljs/product.js"></script>
 <script src="../../dist/ultis/render.js"></script>
+<script src="../../dist/ultis/filter.js"></script>
 <script src="./assets/js/script.js"></script>
 <script src="../../dist/layout/footer/assets/js/footer.js"></script>
 <script src="../../dist/layout/header/asset/js/nav.js"></script>

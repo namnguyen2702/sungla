@@ -341,7 +341,7 @@ const listOfProduct = [
     26
   ),
   new Glass(
-    'Chanel',
+    'Channel',
     'Lorem Glass',
     'Dummy Info',
     ['L', 'SM'],
@@ -365,7 +365,7 @@ const listOfProduct = [
     28
   ),
   new Glass(
-    'Chanel',
+    'Channel',
     'Lorem Glass',
     'Dummy Info',
     ['MD', 'L'],
@@ -412,51 +412,35 @@ class ListGlass {
       ? JSON.parse(window.localStorage.getItem('listProducts'))
       : [];
   }
-  groupAvailableBrand() {
-    const glassesBrands = this.list.map((glass) => glass.brand);
-    const availableBrand = glassesBrands.filter((brand, index) => {
-      return glassesBrands.indexOf(brand) === index;
+  static groupBrand(brand, list = []) {
+    console.log(brand);
+    const glassesBrands = list.filter((glass) => {
+      return glass.brand == brand;
     });
-    return availableBrand;
+    return glassesBrands;
   }
   static groupByFeature(feature) {
     return this.getListProduct().filter((glass) => {
       return glass.feature.toLowerCase() == feature.toLowerCase();
     });
   }
+  static groupByFeatureSort(feature, list = []) {
+    return list.filter((glass) => {
+      return glass.feature.toLowerCase() == feature.toLowerCase();
+    });
+  }
 
   // filter section
-  static groupBySize(list = [], size) {
+  static groupBySize(size, list = []) {
     return list.filter((glass) => {
       return glass.size.includes(size);
     });
   }
-  static groupByBrand(list = [], brand) {
-    return list.filter((glass) => glass.brand === brand);
-  }
-
-  sortDescPrice(list = []) {
-    return list.sort(
-      (glassA, glassB) =>
-        (glassA.isSale ? glassA.salePrice : glassA.price) -
-        (glassB.isSale ? glassB.salePrice : glassB.price)
-    );
-  }
-
-  sortDescPrice(list = []) {
-    return list.sort(
-      (glassA, glassB) =>
-        (glassA.isSale ? glassA.salePrice : glassA.price) -
-        (glassB.isSale ? glassB.salePrice : glassB.price)
-    );
-  }
-
-  sortAscPrice(list = []) {
-    return list.sort(
-      (glassA, glassB) =>
-        (glassB.isSale ? glassB.salePrice : glassB.price) -
-        (glassA.isSale ? glassA.salePrice : glassA.price)
-    );
+  static groupGreaterThan(price, list = []) {
+    // return list.filter((glass) => {
+    //   return glass.price > price;
+    // });
+    return list;
   }
 }
 const defaultList = new ListGlass(listOfProduct);
