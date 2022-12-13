@@ -52,4 +52,5 @@ document.getElementById('next-btn').addEventListener('click', () => {
       el.querySelector('input').value;
   });
   window.localStorage.setItem('shipping_information',JSON.stringify(formObj));
+  window.location.href="/pages/order-review"
 });
