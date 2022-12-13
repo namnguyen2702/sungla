@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/order.css" />
+    <link rel="stylesheet" href="../../dist/layout/header/asset/css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="../../dist/layout/footer/assets/css/footer.css"
+    />
+    <link rel="stylesheet" href="../../dist/css/global.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <nav class="nav-bar">
+        <div class="nav-bar__toggleButton">
+          <i class="nav-bar__logo ti ti-menu-2"></i>
+        </div>
+        <div class="nav-bar__icon center">SungLa</div>
+        <div class="nav-bar__menu">
+          <ul role="list" class="nav-bar__items">
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Home</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Shop</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Blog</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Sale</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <a href="#" class="fw-primary">Contact us</a>
+            </li>
+            <li class="nav-bar__items-item">
+              <input type="text" name="" id="" />
+              <button>Find</button>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-bar__menu_feature">
+          <div class="nav-bar__menu_feature--favourites">
+            <i class="ti ti-heart"></i>
+          </div>
+          <a class="nav-bar__menu_feature--account" href="/pages/Cart/">
+            <i class="ti ti-shopping-cart"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="nav-bar--block"></div>
+    </div>
+
+    <div class="main__container" id="Main__container">
+      <div class="main" style="min-height: 90vh">
+        <div class="main__footer--bottom">
+          <ul class="breadcrumb">
+            <li><a href="#">Shoping</a></li>
+            <li>Review & Payments</li>
+          </ul>
+        </div>
+
+        <div class="main__content">
+          <div class="check__order">
+            <p class="title-check content--bold">Payment Method</p>
+            <p class="link__check">Check/Money order</p>
+            <div class="cb-infor">
+              <input type="checkbox" name="cb-infor" id="cb-infor" />
+              <label class="cb-txt content--infor"
+                >My billing and shipping address are the same</label
+              >
+            </div>
+            <div class="infor-txt">
+              <p class="txt-infor-item content--infor" id="client-name"></p>
+              <p class="txt-infor-item content--infor" id="company"></p>
+              <p class="txt-infor-item content--infor" id="street_address"></p>
+              <p class="txt-infor-item content--infor" id="state"></p>
+              <p class="txt-infor-item content--infor phone" id="phone">
+                +375292169179
+              </p>
+            </div>
+            <div class="btn-infor">
+              <button
+                type="submit"
+                class="btnOk"
+                onclick="window.alert('Order Success')"
+              >
+                PLACE ORDER
+              </button>
+              <button type="submit" class="btnBack">BACK</button>
+            </div>
+            <p class="title-check content--bold">Apply Discount Code</p>
+            <div class="code-discount">
+              <input
+                type="text"
+                name="txt-code"
+                id="txt-code"
+                placeholder="Enter discount code"
+                class="content--infor"
+              />
+              <button type="submit" class="btn-code">APPLY</button>
+            </div>
+          </div>
+
+          <button type="button" id="order__header">
+            <div class="btn-view__Detail">
+              <div class="total-order">
+                <p class="total">Order Total:</p>
+                <p class="price-total">120.00 EUR</p>
+              </div>
+              <div class="viewDetail">
+                <a class="seeDetail" href="/pages/Cart/">See Detail</a>
+              </div>
+            </div>
+          </button>
+
+          <div class="main-order">
+            <div id="Content__order" class="content__order">
+              <div class="Order__infor">
+                <div class="table__infor">
+                  <div class="titel-order">
+                    <p class="title-check content--bold">Order Summary</p>
+                    <span id="close">&times;</span>
+                  </div>
+                  <div class="total-order infor-flex">
+                    <p class="total font-bold">Order Total</p>
+                    <p class="price font-bold" id="order-total">120.00 EUR</p>
+                  </div>
+                  <button type="button" class="collapsible">1 item cart</button>
+                  <div class="item__cart" id="item_cart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <section>
+        <div class="footer">
+          <div class="footer-icon">
+            <div class="center fs-3xl">SungLa</div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">
+              <div class="--fs-sm">Features</div>
+              <i class="ti ti-plus"></i>
+            </button>
+            <div class="panel">
+              <div class="panel-content">
+                <a href="/shop?features=men" class="--fs-s">Men</a>
+                <a href="/shop?features=women" class="--fs-s">Women</a>
+                <a href="/shop?features=new_arrivals" class="--fs-s"
+                  >New arrivals</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">
+              <div class="--fs-sm">Menu</div>
+              <i class="ti ti-plus"></i>
+            </button>
+            <div class="panel">
+              <div class="panel-content">
+                <a href="/shop?features=men" class="--fs-s">About us</a>
+                <a href="/shop?features=women" class="--fs-s">My cart</a>
+                <a href="/shop?features=new_arrivals" class="--fs-s">Login</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">
+              <div class="--fs-sm">Follow us</div>
+              <i class="ti ti-plus"></i>
+            </button>
+            <div class="panel">
+              <div class="panel-content">
+                <a href="/shop?features=men" class="--fs-s">FaceBook</a>
+                <a href="/shop?features=women" class="--fs-s">Twitter</a>
+                <a href="/shop?features=new_arrivals" class="--fs-s"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="make-by fs-md">Program by Ninh Duc Tung An</div>
+      </section>
+    </div>
+  </body>
+  <script src="../../dist/globaljs/product.js"></script>
+  <script src="../../dist/ultis/render.js"></script>
+  <script src="assets/js/item.js"></script>
+  <script src="../../dist/layout/header/asset/js/nav.js"></script>
+  <script src="../../dist/layout/footer/assets/js/footer.js"></script>
+</html>

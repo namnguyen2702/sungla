@@ -37,3 +37,6 @@ removeButton.forEach((el) => {
     );
   });
 });
+document.getElementById('go-to-order').addEventListener('click', () => {
+  window.location.href = '/pages/create-order/';
+});
