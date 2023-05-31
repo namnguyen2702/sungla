@@ -118,8 +118,6 @@ ul.breadcrumb li a:hover {
 .sidebar {
   grid-column: 1;
   border-right: 2px solid #8b8f8f;
-  height: 100%;
-  position: relative;
 }
 
 .content_item {
@@ -240,11 +238,9 @@ ul.breadcrumb li a:hover {
   cursor: pointer;
 }
 
-.infomation{
-  position: absolute;
-  bottom: 5%;
-  padding-inline: 0.6rem;
-}
+/* .infomation{
+  margin-top: 70rem;
+} */
 .numberPrice{
   font-weight: bold;
 }
